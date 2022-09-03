@@ -1,0 +1,197 @@
+
+main .fifth_wrapper {
+  background: linear-gradient(158deg, #ff8139 77%, rgba(235, 105, 168, 0.514) 100%);  
+  width: 90%;
+  max-width: 1250px;
+  height: 420px;  
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding-left: 80px;
+  padding-right: 80px;  
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper {
+  color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_left_wrapper h2 {  
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_left_wrapper p {
+  font-weight: normal;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_left_wrapper button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div {
+  padding-bottom: 20px;
+  padding-left: 80px;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper img {
+  max-width: 200px;
+  width: 50%;
+  height: auto;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div .id {
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div .name {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div .number {
+  color: #777777;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+main .seventh_wrapper {
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: space-between;
+}
+
+main .seventh_sub_wrapper {
+  width : 48%;  
+  background: #555555;  
+  padding-top: 40px;    
+  padding-bottom: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+main .seventh_sub_wrapper h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+main .seventh_sub_wrapper p {
+  color: #eeeeee;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 1245px) {
+  main .fifth_wrapper {
+    height: auto;
+  }
+
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper img {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  main .fifth_wrapper {
+    height: auto;
+  }
+
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_left_wrapper h2 {
+    font-size: 30px;
+  }
+  
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_left_wrapper p {
+    font-size: 15px;
+  }
+  
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_left_wrapper button {
+    font-size: 15px;
+  }
+  
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div .id {
+    font-size: 9px;
+  }
+  
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div .name {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div .number {
+    font-size: 14px;
+  }
+
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper img {
+    width: 50%;
+  }  
+
+  main .seventh_sub_wrapper {
+    width : 100%; 
+    margin-top: 80px; 
+  }
+
+  main .seventh_sub_wrapper h2 {
+    font-size: 30px;
+  }
+  
+  main .seventh_sub_wrapper p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  main .fifth_wrapper {
+    height: auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper img {
+    width: 50%;
+  }
+
+  main .fifth_wrapper .fifth_generic_wrapper .fifth_right_wrapper div {
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+
+  main .seventh_sub_wrapper {
+    padding: 20px;    
+  }
+}
