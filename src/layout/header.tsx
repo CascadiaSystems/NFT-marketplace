@@ -47,13 +47,15 @@ export default function Header() {
                   ) : (
                     <Link href='/'>
                       <div className='flex items-center justify-start'>
-                        Sophon
+                        <div className='text-3xl font-bold uppercase text-white first-letter:text-5xl'>
+                          Sophon
+                        </div>
                       </div>
                     </Link>
                   )}
                 </div>
                 <div className='hidden lg:ml-6 lg:block'>
-                  <div className='flex h-full items-center space-x-4'>
+                  <div className='flex h-full items-center space-x-0'>
                     {config.navigation.map((item) => {
                       if (router.pathname == '/') {
                         return (
@@ -64,7 +66,7 @@ export default function Header() {
                             smooth={true}
                             aria-current={item.current ? 'page' : undefined}
                           >
-                            <div className='capitalize text-white'>
+                            <div className='cursor-pointer px-3 py-2 capitalize text-gray-200 transition-all hover:text-white'>
                               {item.name}
                             </div>
                           </ScrollLink>

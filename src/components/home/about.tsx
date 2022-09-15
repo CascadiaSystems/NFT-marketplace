@@ -14,7 +14,10 @@ const About = (): JSX.Element => {
   return (
     <section>
       <div className='w-full'>
-        <div className="relative h-screen w-full overflow-hidden  bg-[url('/images/home/background.png')] bg-cover md:bg-[url('/images/home/background.png')]">
+        <div
+          id='about'
+          className="about relative h-screen w-full overflow-hidden  bg-[url('/images/home/background.png')] bg-cover md:bg-[url('/images/home/background.png')]"
+        >
           <video
             autoPlay
             playsInline
@@ -26,11 +29,16 @@ const About = (): JSX.Element => {
           </video>
           <div className='absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/75'></div>
           <div className='relative h-full w-screen'>
-            <div className='absolute bottom-[4rem] right-0 flex flex-col items-end px-20 text-white'>
-              <h2 className='mb-5 overflow-hidden text-ellipsis'>
-                An NFT like no other
-              </h2>
-              <h4 className='text-right'>{`Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.`}</h4>
+            <div className='absolute inset-x-0 bottom-10 flex items-end justify-between px-10 text-white'>
+              <div>
+                <p className='text-left text-sm'>©2022 Sophon Foundation</p>
+              </div>
+              <div className='text-right'>
+                <h2 className='mb-5 overflow-hidden text-ellipsis'>
+                  An NFT like no other
+                </h2>
+                <p className='text-right text-sm'>{`Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.`}</p>
+              </div>
             </div>
           </div>
         </div>

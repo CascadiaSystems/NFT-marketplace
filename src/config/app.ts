@@ -1,6 +1,6 @@
 const App = {
   navigation: [
-    { id: 0, name: 'Home', href: 'about', current: true },
+    { id: 0, name: 'About', href: 'about', current: true },
     { id: 1, name: 'RoadMap', href: 'roadmap', current: true },
     { id: 2, name: 'Partners', href: 'partner', current: true },
     { id: 3, name: 'Contributors', href: 'contributors', current: true },

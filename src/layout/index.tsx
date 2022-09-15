@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 import Header from './header';
@@ -9,6 +10,7 @@ type Props = {
 const Layout = ({ children }: Props): JSX.Element => {
   return (
     <>
+      <NextSeo title='Sophon Foundation' description='NFT marketplace' />
       <Header />
       {children}
     </>
