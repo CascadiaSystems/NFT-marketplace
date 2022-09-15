@@ -16,7 +16,7 @@ const About = (): JSX.Element => {
       <div className='w-full'>
         <div
           id='about'
-          className="about relative h-screen w-full overflow-hidden  bg-[url('/images/home/background.png')] bg-cover md:bg-[url('/images/home/background.png')]"
+          className="about relative h-screen w-full overflow-hidden bg-[url('/images/home/about/sophon.png')] bg-cover md:bg-[url('/images/home/about/sophon.png')]"
         >
           <video
             autoPlay
@@ -29,7 +29,7 @@ const About = (): JSX.Element => {
           </video>
           <div className='absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/75'></div>
           <div className='relative h-full w-screen'>
-            <div className='absolute inset-x-0 bottom-10 flex items-end justify-between px-10 text-white'>
+            <div className='absolute inset-x-0 bottom-10 flex items-end justify-between px-10 text-gray-200'>
               <div>
                 <p className='text-left text-sm'>©2022 Sophon Foundation</p>
               </div>
