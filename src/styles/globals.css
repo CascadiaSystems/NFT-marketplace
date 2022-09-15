@@ -6,6 +6,10 @@ html {
   overflow: overlay;
 }
 
+body {
+  cursor: url('/svg/cursor.svg'), auto;
+}
+
 h1 {
   @apply text-5xl;
 }
