@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Home = (): JSX.Element => {
-  return (
-    <div>
-      Home
-    </div>
-  )
-}
+import Home from '@/components/home';
 
-export default Home;
+import Layout from '@/layout';
+
+const Index = (): JSX.Element => {
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  );
+};
+
+export default Index;

@@ -9,21 +9,13 @@ module.exports = {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
-      colors: {
-        primary: {
-          // Customize it on globals.css :root
-          50: 'rgb(var(--tw-color-primary-50) / <alpha-value>)',
-          100: 'rgb(var(--tw-color-primary-100) / <alpha-value>)',
-          200: 'rgb(var(--tw-color-primary-200) / <alpha-value>)',
-          300: 'rgb(var(--tw-color-primary-300) / <alpha-value>)',
-          400: 'rgb(var(--tw-color-primary-400) / <alpha-value>)',
-          500: 'rgb(var(--tw-color-primary-500) / <alpha-value>)',
-          600: 'rgb(var(--tw-color-primary-600) / <alpha-value>)',
-          700: 'rgb(var(--tw-color-primary-700) / <alpha-value>)',
-          800: 'rgb(var(--tw-color-primary-800) / <alpha-value>)',
-          900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
-        },
-        dark: '#222222',
+      colors: {},
+      backgroundImage: {
+        roadmap:
+          'linear-gradient(158deg, #ff8139 77%, rgba(235, 105, 168, 0.514) 100%)',
+      },
+      boxShadow: {
+        roadmap: '0px 0px 6px 3px #af0412',
       },
       keyframes: {
         flicker: {
@@ -45,10 +37,37 @@ module.exports = {
             backgroundPosition: '700px 0',
           },
         },
+        scrollUpSidebar: {
+          '0%': {
+            clipPath: 'inset(175px 0px 0px 0px)',
+          },
+          '100%': {
+            clipPath: 'inset(0px 0px 0px 0px)',
+          },
+        },
+        reactButtonApper: {
+          '0%': {
+            transform: 'translateX(-100%)',
+          },
+          '100%': {
+            transform: 'translateX(0px)',
+          },
+        },
+        reactButtonAnimation: {
+          '0%': {
+            transform: 'scale(0)',
+          },
+          '100%': {
+            transform: 'scale(1)',
+          },
+        },
       },
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
+        scrollUpSidebar: 'scrollUpSidebar 1s linear',
+        reactButtonApper: 'reactButtonApper .8s linear',
+        reactButtonAnimation: 'reactButtonAnimation .5s linear',
       },
     },
   },
