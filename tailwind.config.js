@@ -13,6 +13,8 @@ module.exports = {
       backgroundImage: {
         roadmap:
           'linear-gradient(158deg, #ff8139 77%, rgba(235, 105, 168, 0.514) 100%)',
+        partner:
+          'linear-gradient(transparent 0%,rgba(30,30,30,0.8) 100%) rgba(30,30,30,0)',
       },
       boxShadow: {
         roadmap: '0px 0px 6px 3px #af0412',

@@ -2,17 +2,23 @@
 module.exports = {
   eslint: {
     dirs: ['src'],
+    ignoreDuringBuilds: true,
   },
 
   reactStrictMode: true,
 
-  // Uncoment to add domain whitelist
-  // images: {
-  //   domains: [
-  //     'res.cloudinary.com',
-  //   ],
-  // },
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
 
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
   // SVGR
   webpack(config) {
     config.module.rules.push({
