@@ -14,9 +14,8 @@ module.exports = {
   ],
   rules: {
     'no-unused-vars': 'off',
-    'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-
+    '@typescript-eslint/no-explicit-any': 'off',
     'react/display-name': 'off',
     'react/jsx-curly-brace-presence': [
       'warn',
@@ -26,6 +25,9 @@ module.exports = {
     //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'warn',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/prefer-as-const': 'off',
+    'no-console': 'off',
     'unused-imports/no-unused-vars': [
       'warn',
       {
