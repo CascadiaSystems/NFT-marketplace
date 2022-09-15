@@ -64,7 +64,7 @@ function Home() {
               </svg>
             </div>
 
-            <div className='-tranlate-x-full flex animate-reactButtonApper flex-col'>
+            <div className='-tranlate-x-full flex animate-reactButtonApper cursor-pointer flex-col'>
               {config.navigation.map((item, idx) => (
                 <div key={idx} className='scale-100'>
                   <ScrollLink
@@ -74,13 +74,14 @@ function Home() {
                     onClick={() => handleSelectSlider(idx)}
                   >
                     <svg
+                      className='m-[6px] cursor-pointer'
                       width='20'
                       viewBox='0 0 20 20'
                       fill='none'
                       xmlns='http://www.w3.org/2000/svg'
-                      style={{ margin: '6px', cursor: 'pointer' }}
                     >
                       <rect
+                        className='cursor-pointer'
                         x='0.707107'
                         y='10'
                         width='13.1421'

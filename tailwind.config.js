@@ -10,6 +10,13 @@ module.exports = {
         primary: ['Inter', ...fontFamily.sans],
       },
       colors: {},
+      backgroundImage: {
+        roadmap:
+          'linear-gradient(158deg, #ff8139 77%, rgba(235, 105, 168, 0.514) 100%)',
+      },
+      boxShadow: {
+        roadmap: '0px 0px 6px 3px #af0412',
+      },
       keyframes: {
         flicker: {
           '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {

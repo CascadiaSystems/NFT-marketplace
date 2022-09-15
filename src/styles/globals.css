@@ -4,9 +4,6 @@
 
 html {
   overflow: overlay;
-}
-
-body {
   cursor: url('/svg/cursor.svg'), auto;
 }
 
@@ -34,8 +31,13 @@ h4 {
 
 ::-webkit-scrollbar-thumb {
   background: #8f2525;
+  cursor: url('/svg/cursor.svg'), auto;
 }
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
+}
+
+.cursor-pointer {
+  cursor: url('/svg/cursor_hover.svg'), auto;
 }
