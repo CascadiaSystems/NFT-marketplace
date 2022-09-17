@@ -96,7 +96,7 @@ const Header = function () {
             <div className="navbar-title navbar-item">
               <NavLink to="/">
                 <div className="logo-content">
-                  <img
+                  {/* <img
                     src="./img/logo-3.png"
                     className="img-fluid d-block"
                     alt="#"
@@ -110,7 +110,7 @@ const Header = function () {
                     src="./img/logo-light.png"
                     className="img-fluid d-none"
                     alt="#"
-                  />
+                  /> */}
                   <span className="title">Sophon</span>
                 </div>
               </NavLink>
