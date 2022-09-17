@@ -65,10 +65,10 @@ const homethree = () => (
             <div>
               <p className="copy-right">&copy; 2022 Sophon Foundation</p>
             </div>
-            <div className="text-right">
+            {/* <div className="text-right">
               <h2 className="title">An NFT like no other</h2>
               <p className="description">{`Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.`}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
