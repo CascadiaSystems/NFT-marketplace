@@ -130,7 +130,7 @@ export default class Responsive extends Component {
               </span>
               <div className="nft_pic_wrap">
                 <img
-                  src="./img/items/anim-5.webp"
+                  src="./img/items/sophon/4.png"
                   className="lazy img-fluid"
                   alt=""
                 />
@@ -148,7 +148,7 @@ export default class Responsive extends Component {
               </span>
               <div className="nft_pic_wrap">
                 <img
-                  src="./img/items/anim-8.webp"
+                  src="./img/items/sophon/5.png"
                   className="lazy img-fluid"
                   alt=""
                 />
