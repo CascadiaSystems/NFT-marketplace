@@ -14,7 +14,7 @@ export default function Swithcer() {
     setDarkSide(checked);
   };
   return (
-    <div className="color-switch mainside">
+    <div className="color-switch">
       <DarkModeSwitch
         checked={darkSide}
         onChange={toggleDarkMode}
