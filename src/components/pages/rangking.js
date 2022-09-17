@@ -105,7 +105,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-1.jpg"
+                      src="./img/author/sophon/1.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -124,7 +124,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-2.jpg"
+                      src="./img/author/sophon/2.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -143,7 +143,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-3.jpg"
+                      src="./img/author/sophon/3.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -162,7 +162,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-4.jpg"
+                      src="./img/author/sophon/4.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -181,7 +181,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-5.jpg"
+                      src="./img/author/sophon/5.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -200,7 +200,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-6.jpg"
+                      src="./img/author/sophon/6.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -219,7 +219,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-7.jpg"
+                      src="./img/author/sophon/7.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -238,7 +238,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-8.jpg"
+                      src="./img/author/sophon/8.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -257,7 +257,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-9.jpg"
+                      src="./img/author/sophon/9.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -276,7 +276,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-10.jpg"
+                      src="./img/author/sophon/10.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -295,7 +295,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-11.jpg"
+                      src="./img/author/sophon/11.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>
@@ -314,7 +314,7 @@ const explore = () => (
                   <div className="coll_list_pp">
                     <img
                       className="lazy"
-                      src="./img/author/author-12.jpg"
+                      src="./img/author/sophon/12.png"
                       alt=""
                     />
                     <i className="fa fa-check"></i>

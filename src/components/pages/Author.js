@@ -59,9 +59,9 @@ const Colection = function () {
                       <span id="wallet" className="profile_wallet">
                         DdzFFzCqrhshMSxb9oW3mRo4MJrQkusV3fGFSTwaiu4wPBqMryA9DYVJCkW9n7twCffG5f5wX2sSkoDXGiZB1HPa7K7f865Kk4LqnrME
                       </span>
-                      <button id="btn_copy" title="Copy Text">
+                      {/* <button id="btn_copy" title="Copy Text">
                         Copy
-                      </button>
+                      </button> */}
                     </h4>
                   </div>
                 </div>

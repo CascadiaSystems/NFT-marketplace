@@ -50,12 +50,17 @@ const Colection = function () {
                   <h4>
                     Collection #6949
                     <div className="clearfix"></div>
+                    <div className="profile_description">
+                      The Sophon is a minor antagonist of Remembrance of Earth's
+                      Past Trilogy, a sci-fi novel written by the Chinese writer
+                      Cixin Liu.
+                    </div>
                     <span id="wallet" className="profile_wallet">
                       DdzFFzCqrhshMSxb9oW3mRo4MJrQkusV3fGFSTwaiu4wPBqMryA9DYVJCkW9n7twCffG5f5wX2sSkoDXGiZB1HPa7K7f865Kk4LqnrME
                     </span>
-                    <button id="btn_copy" title="Copy Text">
+                    {/* <button id="btn_copy" title="Copy Text">
                       Copy
-                    </button>
+                    </button> */}
                   </h4>
                 </div>
               </div>
