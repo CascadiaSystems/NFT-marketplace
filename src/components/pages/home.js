@@ -9,7 +9,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.sticky.white {
-    background: #212428;
+    // background: #212428;
     border-bottom: 0;
     box-shadow: 0 4px 20px 0 rgba(10,10,10, .8);
   }
@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
     background: rgba(255, 255, 255, .1);
   }
   header#myHeader.navbar.white .btn, .navbar.white a, .navbar.sticky.white a{
-    color: #fff;
+    // color: #fff;
   }
   header#myHeader .dropdown-toggle::after{
     color: #fff;
@@ -40,7 +40,6 @@ const GlobalStyles = createGlobalStyle`
   }
   .de_countdown{
     right: 10px;
-    color: #fff;
   }
   .author_list_pp{
     margin-left:0;
@@ -58,7 +57,7 @@ const homethree = () => (
         className="about"
         style={{ backgroundImage: `url(${"./img/about/sophon.png"})` }}
       >
-        <video autoplay="true" playsinline="true" muted="true" loop="true">
+        <video autoPlay={true} playsInline={true} muted={true} loop={true}>
           <source src="./video/sophon.mp4" type="video/mp4" />
         </video>
         <div className="back-image"></div>

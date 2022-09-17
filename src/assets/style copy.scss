@@ -8,7 +8,7 @@
 *
 *
   scrollbar
-  color / $text
+  color / $white
   font / @import 
   general / html
   dropdown / .dropdown-custom.btn
@@ -54,26 +54,19 @@
 }
 
 /*color*/
-// $text: #fff;
-// $gray: #bbb;
-// $background: #111;
-// $general: #a2a2a2;
-// $black_soft: #333;
-// $black_col: #0b214b;
-// $black_more: #0f0f0f;
-// $black_opacity: $backgroundb2;
-// $text: #ff343f;
-// $color_more: #fc202c;
-
-$text: var(--text);
-$gray: var(--gray);
-$background: var(--background);
-$general: var(--general);
-$black_soft: var(--black_soft);
-$black_col: var(--black_col);
-$black_more: var(--black_more);
-$black_opacity: var(--black_opacity);
-$color_more: var(--color_more);
+$white: #fff;
+$gray: #bbb;
+$black: #111;
+$general: #a2a2a2;
+$black_soft: #333;
+$black_col: #2e333c;
+$black_more: #0f0f0f;
+$black_opacity: #212428b2;
+$color: #ff343f;
+$color_more: #fc202c;
+.col-white {
+  color: $white;
+}
 
 /*font*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap");
@@ -87,8 +80,8 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: $general;
-  overflow: overlay;
-  background: $background;
+  // background: #212428;
+  background: $black;
   word-spacing: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -119,7 +112,7 @@ section {
     display: block;
     width: 50px;
     height: 2px;
-    background: $text;
+    background: $color;
     border-left: none;
     border-left-color: currentcolor;
     border-right: none;
@@ -162,29 +155,29 @@ section {
   text-transform: uppercase !important;
 }
 .white {
-  color: $background;
-  background: $text;
+  color: $black;
+  background: $white;
 }
 .black_more {
   background: $black_more;
 }
 .color {
-  color: $text;
+  color: $color;
 }
 .btn {
   position: relative;
   overflow: hidden;
   font-size: 11pt;
-  color: $text;
+  color: $white;
   background: none;
-  border: 2px solid $text;
+  border: 2px solid $color;
   border-radius: 0;
   padding: 10px 44px;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   z-index: 0;
   span {
-    color: $text;
+    color: $white;
     position: relative;
     z-index: 1;
   }
@@ -195,7 +188,7 @@ section {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: linear-gradient(to left, $text, $color_more);
+    background-image: linear-gradient(to left, $color, $color_more);
     opacity: 0;
     z-index: 1;
     transition: all 0.3s ease;
@@ -272,7 +265,7 @@ section {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  background: linear-gradient(to bottom, $text, $color_more);
+  background: linear-gradient(to bottom, $color, $color_more);
 }
 .spacer-10 {
   width: 100%;
@@ -368,7 +361,7 @@ h6,
 .h6 {
   margin-top: 0;
   font-weight: 700;
-  color: $text;
+  color: $white;
 }
 h1,
 .h1 {
@@ -708,7 +701,7 @@ p.lead {
     margin-right: 15px;
     &.white {
       color: $color_more !important;
-      background: $text;
+      background: $white;
     }
   }
 }
@@ -740,7 +733,7 @@ p.lead {
     box-shadow: none !important;
   }
   &:hover {
-    color: $text;
+    color: $color;
   }
 }
 .dropdown-toggle::after {
@@ -771,7 +764,7 @@ p.lead {
     text-align: center;
     box-shadow: 0 4px 20px 0 rgba(10, 10, 10, 0.4);
     a {
-      color: $text !important;
+      color: $white !important;
       text-transform: none;
       font-weight: normal;
       letter-spacing: normal;
@@ -782,8 +775,8 @@ p.lead {
       width: 100%;
       text-align: left;
       &:hover {
-        color: $text !important;
-        background: $color_more;
+        color: $white !important;
+        background: $color;
       }
       &:last-child {
         border-bottom: none;
@@ -817,10 +810,10 @@ p.lead {
   transition: all 0.6s ease;
   &.white {
     a {
-      color: $text;
+      color: $white;
     }
     .btn {
-      color: $text;
+      color: $white;
       .lines {
         top: 24px;
       }
@@ -839,11 +832,11 @@ p.lead {
     font-weight: 800;
     padding: 0 5px 0 0;
     text-decoration: none !important;
-    color: $text;
+    color: $white;
     outline: none;
     transition: all 0.3s ease;
     &:hover {
-      color: $text;
+      color: $white;
       transition: all 0.3s ease;
     }
     &.active {
@@ -877,7 +870,7 @@ p.lead {
       top: 22px;
       display: block;
       width: 0;
-      border-bottom: 2px solid $color_more;
+      border-bottom: 2px solid $color;
       transition: 0.7s;
     }
     &:hover {
@@ -956,7 +949,7 @@ p.lead {
         top: 28px;
       }
       .dropdown-custom.btn {
-        color: $text;
+        color: $white;
         width: 100%;
         text-align: left;
         &::after {
@@ -1012,21 +1005,21 @@ p.lead {
       width: 100%;
       height: 2px;
       top: 0px;
-      background-color: $text;
+      background-color: $white;
     }
     .menu-line1 {
       position: absolute;
       width: 100%;
       height: 2px;
       top: 5px;
-      background-color: $text;
+      background-color: $white;
     }
     .menu-line2 {
       position: absolute;
       width: 100%;
       height: 2px;
       top: 10px;
-      background-color: $text;
+      background-color: $white;
     }
     &.sticky {
       position: absolute !important;
@@ -1054,17 +1047,17 @@ p.lead {
     position: fixed;
     top: 0;
     width: 100%;
-    background: $background;
+    background: #212428;
     border-bottom: 0;
     transition: all 0.6s ease;
     &.white {
-      background: $background;
+      background: #212428;
       box-shadow: 0 4px 20px 0 rgba(10, 10, 10, 0.8);
       .btn {
-        color: $text;
+        color: $white;
       }
       a {
-        color: $text;
+        color: $white;
       }
     }
   }
@@ -1077,7 +1070,7 @@ p.lead {
       border: none;
       border-radius: 20px;
       font-size: 15px;
-      color: $text;
+      color: $white;
       background: rgba(255, 255, 255, 0.1);
       width: 274px;
       height: 34px;
@@ -1219,8 +1212,8 @@ p.lead {
   overflow: hidden;
   font-size: 11pt;
   letter-spacing: 1px;
-  color: $text;
-  border: 2px solid $text;
+  color: $white;
+  border: 2px solid $color;
   background: none;
   border-radius: 0;
   padding: 0 44px;
@@ -1239,7 +1232,7 @@ p.lead {
     top: -100%;
     left: -100%;
     position: absolute;
-    background-image: linear-gradient(to left, $text, $color_more);
+    background-image: linear-gradient(to left, $color, $color_more);
     opacity: 0;
     z-index: 1;
     transition: all 0.3s ease;
@@ -1437,7 +1430,7 @@ p.lead {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, $background, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to bottom, $black, rgba(0, 0, 0, 0.1));
     opacity: 0.5;
   }
   &.no-bg::before {
@@ -1445,13 +1438,13 @@ p.lead {
   }
   .mainbreadcumb {
     padding: 150px 0 110px;
-    background-image: linear-gradient($background, transparent, $background);
+    background-image: linear-gradient($black, transparent, $black);
     h1 {
       margin-bottom: 0;
-      color: $text;
+      color: $white;
     }
     p {
-      color: $text;
+      color: $white;
       margin-top: 15px;
     }
     .list {
@@ -1466,7 +1459,7 @@ p.lead {
         padding: 0 10px;
       }
       .link {
-        color: $text;
+        color: $white;
         font-weight: 500;
         line-height: 1.3;
         letter-spacing: 1px;
@@ -1476,7 +1469,7 @@ p.lead {
         cursor: pointer;
         transition: all 0.3s ease;
         &:hover {
-          color: $text;
+          color: $color;
           transition: all 0.3s ease;
         }
       }
@@ -1529,7 +1522,7 @@ p.lead {
 .col-feature {
   display: block;
   .sub-color {
-    color: $text;
+    color: $color;
     font-size: 1.6rem;
     font-weight: 700;
   }
@@ -1629,7 +1622,7 @@ p.lead {
     position: relative;
     text-align: center;
     .heading {
-      color: $text;
+      color: $color;
       font-weight: 500;
       font-size: 1.2rem;
       margin-bottom: 10px;
@@ -1645,7 +1638,7 @@ p.lead {
       font-size: 11pt;
       letter-spacing: 1px;
       color: #fff;
-      border: 2px solid $text;
+      border: 2px solid $color;
       background: none;
       border-radius: 0;
       padding: 0 44px;
@@ -1655,7 +1648,7 @@ p.lead {
       cursor: pointer;
       transition: all 0.3s ease;
       &:hover {
-        background: $text;
+        background: $color;
         border: 2px solid rgba(0, 0, 0, 0);
         transition: all 0.3s ease;
         .shine {
@@ -1679,7 +1672,7 @@ footer {
       font-weight: 400;
       text-decoration: none !important;
       &:hover {
-        color: $text;
+        color: $color;
       }
     }
     #form_subscribe {
@@ -1703,7 +1696,7 @@ footer {
         font-size: 28px;
         float: left;
         width: 20%;
-        background: $text;
+        background: $color;
         color: #ffffff;
         display: table-cell;
         padding: 5px 0 5px 0;
@@ -1736,8 +1729,8 @@ footer {
           color: #595d69;
           i {
             text-shadow: none;
-            color: $text;
-            background: $background;
+            color: $white;
+            background: #212428;
             padding: 12px 10px 8px 10px;
             width: 34px;
             height: 34px;
@@ -1748,8 +1741,8 @@ footer {
             transition: 0.3s;
           }
           &:hover i {
-            color: $background;
-            background: $text;
+            color: $black;
+            background: $white;
             transition: 0.3s;
           }
         }
@@ -1795,7 +1788,7 @@ footer {
     text-align: center;
     line-height: 30px;
     border-radius: 30px;
-    background: #ff343f;
+    background: $color;
     transition: all 0.3s ease;
     &:hover {
       transform: scale(1.1);
@@ -1816,7 +1809,7 @@ footer {
 
 /** portofolio **/
 .AppContainer {
-  color: $text;
+  color: $white;
   position: relative;
   z-index: 99;
   height: 100%;
@@ -1838,12 +1831,12 @@ footer {
   }
 }
 .btnLright {
-  color: $text;
+  color: $white;
   font-size: 21px !important;
   right: 10px !important;
 }
 .btnLleft {
-  color: $text;
+  color: $white;
   font-size: 21px !important;
   left: 10px !important;
 }
@@ -1869,7 +1862,7 @@ footer {
     width: 100%;
     bottom: 15px;
     font-weight: 500;
-    color: $text;
+    color: $white;
     top: 0;
     left: 0;
     display: flex;
@@ -1935,11 +1928,11 @@ footer {
         display: inline-block;
       }
       a {
-        color: $text;
+        color: $white;
         text-decoration: none;
         transition: all 0.3s ease;
         &:hover {
-          color: $text;
+          color: $color;
           transition: all 0.3s ease;
         }
       }
@@ -1979,9 +1972,9 @@ footer {
     position: relative;
     overflow: hidden;
     font-size: 11pt;
-    color: $text;
+    color: $white;
     background: none;
-    border: 2px solid $text;
+    border: 2px solid $color;
     border-radius: 0;
     padding: 8px 50px;
     margin-top: 15px;
@@ -1989,7 +1982,7 @@ footer {
     transition-delay: 0s;
     z-index: 0;
     span {
-      color: $text;
+      color: $white;
       position: relative;
       z-index: 3;
     }
@@ -2000,7 +1993,7 @@ footer {
       top: 0;
       left: 0;
       position: absolute;
-      background-image: linear-gradient(to left, $text, $color_more);
+      background-image: linear-gradient(to left, $color, $color_more);
       opacity: 0;
       z-index: 1;
       transition: all 0.3s ease;
@@ -2039,14 +2032,14 @@ footer {
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.05);
   &.text-light {
-    color: $text;
+    color: $white;
     background: rgba(255, 255, 255, 0.05);
     margin-bottom: 0;
     h3 {
-      color: $text;
+      color: $white;
     }
     .btn {
-      color: $text;
+      color: $white;
     }
   }
 }
@@ -2062,7 +2055,7 @@ address {
     line-height: 1.7em;
     margin-bottom: 5px;
     i {
-      color: $text;
+      color: $color;
       margin-top: 5px;
       margin-left: 5px;
       margin-right: 15px;
@@ -2071,7 +2064,7 @@ address {
     .btn {
       display: inline-block;
       border: 0;
-      color: $text;
+      color: $color;
       padding: 0;
       margin: 0;
       &:hover {
@@ -2104,7 +2097,7 @@ address {
   .p-tagline,
   .p-title {
     background: $color_more;
-    color: $text;
+    color: $white;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -2128,7 +2121,7 @@ address {
     margin-top: 10px;
     margin-bottom: 10px;
     span {
-      color: $text;
+      color: $white;
       text-decoration: none;
       font-size: 22px;
       font-weight: bold;
@@ -2145,7 +2138,7 @@ address {
 }
 .pagination li .a {
   font-size: 14px;
-  color: $text;
+  color: $white;
   border: solid 1px rgba(255, 255, 255, 0.1);
   border-right: none;
   background: none;
@@ -2165,7 +2158,7 @@ address {
 }
 .pagination > .active > .a {
   color: #ffffff;
-  background: $text;
+  background: $color;
 }
 
 /*** create file ***/
@@ -2229,7 +2222,7 @@ address {
       text-align: center;
       border-radius: 100%;
       background: rgba(255, 255, 255, 0.01);
-      color: $text;
+      color: $color;
       margin-right: 10px;
     }
   }
@@ -2297,7 +2290,7 @@ address {
       right: 20px;
       top: 30%;
       font-size: 26px;
-      color: $text;
+      color: $color;
       background: rgba(255, 255, 255, 0.025);
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
@@ -2313,8 +2306,8 @@ address {
 #follow.active,
 #offer.active,
 #like.active {
-  background: $text !important;
-  color: $text;
+  background: $color !important;
+  color: $white;
 }
 
 /*** feature box ***/
@@ -2325,7 +2318,7 @@ address {
   border-radius: 3px;
 }
 .feature-box.s1 .inner {
-  background: $background;
+  background: #212428;
 }
 .feature-box.s1:hover .inner i {
   background: none;
@@ -2413,8 +2406,8 @@ i.font60 {
   display: block;
   text-align: center;
   font-size: 28px;
-  color: $text;
-  background: $color_more;
+  color: #ffffff;
+  background: $color;
   padding: 14px 0;
   width: 56px;
   height: 56px;
@@ -2467,12 +2460,12 @@ i.font60 {
 .feature-box.f-boxed {
   overflow: none;
   padding: 50px;
-  background: $background;
+  background: #212428;
   border-radius: 6px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   transition: 0.7s;
   &:hover {
-    background: $background;
+    background: #212428;
     transition: 0.7s;
   }
 }
@@ -2649,13 +2642,13 @@ i.font60 {
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
-  border: solid 2px $background;
+  border: solid 2px #212428;
   background: #ffffff;
 }
 .nft_coll_pp i {
   font-size: 10px;
-  color: $text;
-  background: $color_more;
+  color: #ffffff;
+  background: $color;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -2691,7 +2684,7 @@ i.font60 {
   width: 100%;
   .slick-prev {
     left: -12px;
-    background: $background;
+    background: #212428;
     border-radius: 45px;
     display: block;
     width: 45px;
@@ -2705,8 +2698,8 @@ i.font60 {
       font-family: FontAwesome !important;
       font-style: normal;
       font-weight: normal;
-      color: $text;
-      background: $background;
+      color: $white;
+      background: #212428;
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 45px;
       display: block;
@@ -2715,13 +2708,13 @@ i.font60 {
       line-height: 45px;
     }
     &:hover {
-      background: $text;
+      background: $white;
       box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
     }
   }
   .slick-next {
     right: -12px;
-    background: $background;
+    background: #212428;
     border-radius: 45px;
     display: block;
     width: 45px;
@@ -2734,8 +2727,8 @@ i.font60 {
       font-family: FontAwesome !important;
       font-style: normal;
       font-weight: normal;
-      color: $text;
-      background: $background;
+      color: $white;
+      background: #212428;
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 45px;
       display: block;
@@ -2744,7 +2737,7 @@ i.font60 {
       line-height: 45px;
     }
     &:hover {
-      background: $text;
+      background: $white;
       box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
     }
   }
@@ -2764,7 +2757,7 @@ i.font60 {
       font-size: 1.3rem;
       display: inline-block;
       margin: 5px 15px 0 0;
-      color: $text;
+      color: $white;
       height: max-content;
     }
     p {
@@ -2780,10 +2773,10 @@ i.font60 {
     bottom: -40px;
     li.slick-active button::before {
       opacity: 0.75;
-      color: $text;
+      color: $white;
     }
     li button::before {
-      color: $text;
+      color: $white;
     }
   }
 }
@@ -2825,14 +2818,14 @@ i.font60 {
 }
 .nft__item_price span {
   margin-left: 10px;
-  color: $text;
+  color: $white;
   font-weight: 700;
 }
 .nft__item_action {
   font-size: 14px;
   span {
     font-weight: bold;
-    color: $text;
+    color: $color;
   }
 }
 .nft__item_like {
@@ -2857,14 +2850,14 @@ i.font60 {
   font-size: 0.8rem;
   position: absolute;
   right: 20px;
-  background: $background;
+  background: #212428;
   padding: 6px 10px;
   border-radius: 30px;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
-  border: solid 2px $color_more;
+  border: solid 2px $color;
   z-index: 1;
-  color: $text;
+  color: $white;
   .Clock-days {
     font-weight: bold;
     display: inline-block;
@@ -2892,7 +2885,7 @@ i.font60 {
   display: inline-block;
   width: 50px;
   height: auto;
-  background: $text;
+  background: $color;
   margin-left: 10px;
   margin-top: -3px;
   border-radius: 100% !important;
@@ -2900,7 +2893,7 @@ i.font60 {
   transition: 0.3s;
   &:hover img {
     padding: 3px;
-    -webkit-box-shadow: 0px 0px 0px 2px $text;
+    -webkit-box-shadow: 0px 0px 0px 2px $color;
     transition: 0.3s;
   }
 }
@@ -2915,8 +2908,8 @@ i.font60 {
 }
 
 .author_list_pp i {
-  color: $text;
-  background: $color_more;
+  color: #ffffff;
+  background: $color;
   font-size: 10px;
   padding: 3px;
   position: absolute;
@@ -2981,7 +2974,7 @@ i.font60 {
     padding-left: 70px;
     span {
       cursor: pointer;
-      color: $text;
+      color: $white;
     }
     .bot {
       color: $gray;
@@ -3014,7 +3007,7 @@ i.font60 {
   font-size: 40px;
   margin-bottom: 10px;
   transition: 0.3s;
-  color: $text;
+  color: $color;
 }
 .icon-box span {
   display: block;
@@ -3039,7 +3032,7 @@ i.font60 {
   transition: 0.3s;
   span,
   i {
-    color: $text;
+    color: $white;
   }
 }
 
@@ -3113,7 +3106,7 @@ i.font60 {
       font-family: FontAwesome !important;
       font-style: normal;
       font-weight: normal;
-      color: $text;
+      color: $white;
       position: relative;
       line-height: 60px;
       width: 60px;
@@ -3126,7 +3119,7 @@ i.font60 {
     }
   }
   .slick-next {
-    right: 8px;
+    right: 9px;
     display: block;
     width: 40px;
     height: 60px;
@@ -3140,7 +3133,7 @@ i.font60 {
       font-family: FontAwesome !important;
       font-style: normal;
       font-weight: normal;
-      color: $text;
+      color: $white;
       position: relative;
       line-height: 60px;
       width: 60px;
@@ -3168,7 +3161,7 @@ i.font60 {
       font-size: 1.3rem;
       display: inline-block;
       margin: 5px 15px 0 0;
-      color: $text;
+      color: $white;
       height: max-content;
     }
     p {
@@ -3184,10 +3177,10 @@ i.font60 {
     bottom: -40px;
     li.slick-active button::before {
       opacity: 0.75;
-      color: $text;
+      color: $white;
     }
     li button::before {
-      color: $text;
+      color: $white;
     }
   }
 }
@@ -3234,7 +3227,7 @@ i.font60 {
     padding: 8px 12px;
     width: 200px;
     float: left;
-    color: $text;
+    color: $white;
     border-radius: 5px 0 0 5px;
     border: solid 1px rgba(255, 255, 255, 0.1);
     border-right-color: rgb(221, 221, 221);
@@ -3255,7 +3248,7 @@ i.font60 {
       font-size: 16px;
       float: left;
       width: 60px;
-      background: $text;
+      background: $color;
       color: #ffffff;
       display: table-cell;
       padding: 13px 0;
@@ -3266,10 +3259,10 @@ i.font60 {
 }
 .select1 {
   .css-wenqhu-control {
-    background-color: $background;
+    background-color: #212428;
     border: 1px solid rgba(255, 255, 255, 0.1);
     & > div > div {
-      color: $text;
+      color: $white;
     }
   }
 }
@@ -3298,7 +3291,7 @@ i.font60 {
   .profile_username {
     font-size: 16px;
     display: block;
-    color: $text;
+    color: $color;
   }
 }
 .d_coll .profile_avatar img,
@@ -3321,7 +3314,7 @@ i.font60 {
 }
 .profile_avatar i {
   color: #ffffff;
-  background: $text;
+  background: $color;
   margin: 110px 0 0 110px;
   display: block;
   position: absolute;
@@ -3373,8 +3366,8 @@ i.font60 {
   -webkit-border-radius: 3px;
   outline: none;
   &:hover {
-    color: $text;
-    background: $text;
+    color: $white;
+    background: $color;
     border: 0;
   }
 }
@@ -3415,7 +3408,7 @@ i.font60 {
       }
     }
     &.active span {
-      color: $text;
+      color: $white;
       background: none;
     }
   }
@@ -3469,7 +3462,7 @@ i.font60 {
   .item_author .author_list_info {
     padding-top: 10px;
     padding-left: 70px;
-    color: $text;
+    color: $white;
     font-weight: bold;
   }
   .de_nav {
@@ -3494,7 +3487,7 @@ i.font60 {
   }
   i {
     color: #ffffff;
-    background: $text;
+    background: $color;
     font-size: 10px;
     padding: 3px;
     position: absolute;
@@ -3515,7 +3508,7 @@ i.font60 {
     line-height: 1.2em;
   }
   b {
-    color: $text;
+    color: $white;
   }
 }
 img.img-rounded {
@@ -3541,7 +3534,7 @@ img.img-rounded {
     font-weight: bold;
     position: absolute;
     right: 30px;
-    color: $text;
+    color: $white;
     padding: 2px 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
@@ -3572,7 +3565,7 @@ img.img-rounded {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  color: $text;
+  color: $white;
 }
 .list.s3 {
   display: inline;
@@ -3583,7 +3576,7 @@ img.img-rounded {
     list-style: none;
     margin-right: 20px;
     span {
-      color: $text;
+      color: $color;
       font-weight: 600;
       cursor: pointer;
     }
@@ -3600,12 +3593,12 @@ img.img-rounded {
 }
 .box-login {
   padding: 40px;
-  background: $background;
+  background: #212428;
   border-radius: 5px;
   p {
-    color: $text !important;
+    color: $white !important;
     span {
-      color: $text;
+      color: $color;
       text-decoration: none;
       cursor: pointer;
     }
@@ -3783,7 +3776,7 @@ img.img-rounded {
   }
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link.active {
-    color: $text;
+    color: $white;
     background: $color_more;
     border-radius: 4px;
     border: 0;
@@ -3808,7 +3801,7 @@ img.img-rounded {
   }
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link.active {
-    color: $text;
+    color: $white;
     background: $color_more;
     border-radius: 4px;
     border: 0;
@@ -3834,7 +3827,7 @@ img.img-rounded {
   }
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link.active {
-    color: $text;
+    color: $white;
     background: $color_more;
     border-radius: 4px;
     border: 0;
@@ -3844,7 +3837,7 @@ img.img-rounded {
   background: rgba(255, 255, 255, 0.025);
 }
 .nav-link {
-  color: $text;
+  color: $white;
   &:hover {
     color: $color_more;
   }
@@ -3890,7 +3883,7 @@ img.img-rounded {
     content: "\f00c";
     color: #ffffff;
     border: rgba(0, 0, 0, 0);
-    background: $text;
+    background: $color;
   }
 }
 
@@ -3944,7 +3937,7 @@ img.img-rounded {
     }
     i {
       color: #ffffff;
-      background: $text;
+      background: $color;
       font-size: 10px;
       padding: 3px;
       position: absolute;
@@ -3973,15 +3966,15 @@ img.img-rounded {
     span {
       border: solid 1px rgba(255, 255, 255, 0.1);
       padding: 15px 20px 15px 20px;
-      color: $text;
+      color: $white;
       cursor: pointer;
     }
   }
   li.active {
     span {
-      border-color: $text;
+      border-color: $color;
       border-right: none;
-      background: $text;
+      background: $color;
     }
   }
 }
@@ -4011,7 +4004,7 @@ img.img-rounded {
       float: left;
       width: 100%;
       color: #ffffff;
-      background: $text;
+      background: $color;
       display: table-cell;
       padding: 5px 40px 7px 40px;
       border-radius: 0 8px 8px 0;
@@ -4031,7 +4024,7 @@ img.img-rounded {
     box-shadow: unset;
     .dropdown {
       a {
-        color: $text !important;
+        color: $white !important;
         padding: 10px 10px 10px 10px;
         width: 100%;
         text-align: left;
@@ -4043,7 +4036,7 @@ img.img-rounded {
   .navbar {
     top: 0;
     &.white a {
-      color: $text;
+      color: $white;
     }
   }
   #myHeader .container {
@@ -4159,7 +4152,7 @@ img.img-rounded {
   .back-image {
     position: absolute;
     inset: 0;
-    background-image: linear-gradient($background, transparent, $background);
+    background-image: linear-gradient($black, transparent, $black);
   }
   .video-wrap {
     position: relative;
@@ -4175,7 +4168,7 @@ img.img-rounded {
       justify-content: space-between;
       padding-left: 40px;
       padding-right: 40px;
-      color: $text;
+      color: $white;
       .copy-right {
         text-align: left;
         font-size: 12px;

@@ -3,9 +3,9 @@ import Breakpoint, {
   BreakpointProvider,
   setDefaultBreakpoints,
 } from "react-socks";
-import { header } from "react-bootstrap";
 import { Link } from "@reach/router";
 import useOnclickOutside from "react-cool-onclickoutside";
+import Swithcer from "../components/ColorModeSwitcher";
 
 setDefaultBreakpoints([{ xs: 0 }, { l: 1199 }, { xl: 1200 }]);
 
@@ -488,6 +488,8 @@ const Header = function () {
               Connect Wallet
             </NavLink>
           </div>
+
+          <Swithcer />
         </div>
 
         <button className="nav-icon" onClick={() => btn_icon(!showmenu)}>

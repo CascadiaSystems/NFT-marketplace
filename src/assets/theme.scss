@@ -1,0 +1,38 @@
+$themes: (
+  "light": (
+    "text": #212428,
+    "background": #fff,
+    "border": #d8d8d8,
+    "border-focus": #bbbbbb,
+    "subtle": #979797,
+    "muted": #535353,
+    "general": #a2a2a2,
+    "black_soft": #333,
+    "black_col": #2e333c,
+    "black_more": #0f0f0f,
+    "black_opacity": #bdbdbdb2,
+    "color_more": #fc202c,
+  ),
+  "dark": (
+    "text": #fff,
+    "background": #212428,
+    "border": #616161,
+    "border-focus": #757575,
+    "subtle": #9e9e9e,
+    "muted": #bdbdbd,
+    "general": #a2a2a2,
+    "black_soft": #333,
+    "black_col": #2e333c,
+    "black_more": #0f0f0f,
+    "black_opacity": #212428b2,
+    "color_more": #fc202c,
+  ),
+);
+
+@each $theme-name, $properties in $themes {
+  .#{$theme-name} {
+    @each $name, $property in $properties {
+      --#{$name}: #{$property};
+    }
+  }
+}
