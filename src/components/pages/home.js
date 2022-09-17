@@ -40,9 +40,6 @@ const GlobalStyles = createGlobalStyle`
   .de_countdown{
     right: 10px;
   }
-  .author_list_pp{
-    margin-left:0;
-  }
   footer.footer-light .subfooter{
     border-top: 1px solid rgba(255,255,255,.1);
   }

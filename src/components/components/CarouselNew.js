@@ -31,7 +31,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/1.png",
       previewImg: "./img/items/static-1.jpg",
-      title: "Pinky Ocean",
+      title: "Item #2563",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -43,7 +43,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/10.png",
       previewImg: "./img/items/static-2.jpg",
-      title: "Deep Sea Phantasy",
+      title: "Item #3637",
       price: "0.06 ETH",
       bid: "1/22",
       likes: 80,
@@ -55,7 +55,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/11.png",
       previewImg: "./img/items/static-3.jpg",
-      title: "Rainbow Style",
+      title: "Item #5547",
       price: "0.05 ETH",
       bid: "1/11",
       likes: 97,
@@ -67,7 +67,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/12.png",
       previewImg: "./img/items/static-4.jpg",
-      title: "Two Tigers",
+      title: "Item #6815",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -79,7 +79,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/9.png",
       previewImg: "./img/items/anim-4.webp",
-      title: "The Truth",
+      title: "Item #1652",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -91,7 +91,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/2.png",
       previewImg: "./img/items/anim-2.webp",
-      title: "Running Puppets",
+      title: "Item #8841",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -103,7 +103,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/3.png",
       previewImg: "./img/items/anim-1.webp",
-      title: "USA Wordmation",
+      title: "Item #5584",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -115,7 +115,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/4.png",
       previewImg: "./img/items/anim-5.webp",
-      title: "Loop Donut",
+      title: "Sophon #99763",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -127,7 +127,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/5.png",
       previewImg: "./img/items/anim-3.webp",
-      title: "Lady Copter",
+      title: "Item #4881",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -151,7 +151,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/6.png",
       previewImg: "./img/items/anim-6.webp",
-      title: "Oh Yeah!",
+      title: "Item #7794",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -163,7 +163,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/8.png",
       previewImg: "./img/items/anim-7.webp",
-      title: "This is Our Story",
+      title: "Item #2694",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -175,7 +175,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/9.png",
       previewImg: "./img/items/static-6.jpg",
-      title: "Pixel World",
+      title: "Item #6949",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -187,7 +187,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/12.png",
       previewImg: "./img/items/anim-8.webp",
-      title: "I Believe I Can Fly",
+      title: "Sophon #89763",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,
@@ -286,7 +286,7 @@ export default class Responsive extends Component {
                 </div>
                 <div className="nft__item_info">
                   <span onClick={() => window.open("/#", "_self")}>
-                    <h4>Pinky Ocean</h4>
+                    <h4>Item #2563</h4>
                   </span>
                   <div className="nft__item_price">
                     0.08 ETH<span>1/20</span>
@@ -331,7 +331,7 @@ export default class Responsive extends Component {
                 </div>
                 <div className="nft__item_info">
                   <span onClick={() => window.open("/#", "_self")}>
-                    <h4>Deep Sea Phantasy</h4>
+                    <h4>Item #3637</h4>
                   </span>
                   <div className="nft__item_price">
                     0.06 ETH<span>1/22</span>
@@ -379,7 +379,7 @@ export default class Responsive extends Component {
                 </div>
                 <div className="nft__item_info">
                   <span onClick={() => window.open("/#", "_self")}>
-                    <h4>Rainbow Style</h4>
+                    <h4>Item #5547</h4>
                   </span>
                   <div className="nft__item_price">
                     0.05 ETH<span>1/11</span>
@@ -424,7 +424,7 @@ export default class Responsive extends Component {
                 </div>
                 <div className="nft__item_info">
                   <span onClick={() => window.open("/#", "_self")}>
-                    <h4>Two Tigers</h4>
+                    <h4>Item #6815</h4>
                   </span>
                   <div className="nft__item_price">
                     0.02 ETH<span>1/15</span>
@@ -469,7 +469,7 @@ export default class Responsive extends Component {
                 </div>
                 <div className="nft__item_info">
                   <span onClick={() => window.open("/#", "_self")}>
-                    <h4>The Truth</h4>
+                    <h4>Item #1652</h4>
                   </span>
                   <div className="nft__item_price">
                     0.06 ETH<span>1/20</span>
@@ -517,7 +517,7 @@ export default class Responsive extends Component {
                 </div>
                 <div className="nft__item_info">
                   <span onClick={() => window.open("/#", "_self")}>
-                    <h4>Running Puppets</h4>
+                    <h4>Item #8841</h4>
                   </span>
                   <div className="nft__item_price">
                     0.03 ETH<span>1/24</span>

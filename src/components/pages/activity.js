@@ -100,7 +100,7 @@ const Activity = function () {
                     alt=""
                   />
                   <div className="act_list_text">
-                    <h4>Monica Lucas</h4>
+                    <h4>The Art of Sophons</h4>
                     started following <span className="color">Gayle Hicks</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -108,7 +108,7 @@ const Activity = function () {
                 <li className="act_sale">
                   <img className="lazy" src="./img/items/sophon/2.png" alt="" />
                   <div className="act_list_text">
-                    <h4>Deep Sea Phantasy</h4>1 edition purchased by{" "}
+                    <h4>Item #3637</h4>1 edition purchased by{" "}
                     <span className="color">Stacy Long</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -129,7 +129,7 @@ const Activity = function () {
                 <li className="act_sale">
                   <img className="lazy" src="./img/items/sophon/4.png" alt="" />
                   <div className="act_list_text">
-                    <h4>Two Tigers</h4>1 edition purchased by{" "}
+                    <h4>Item #6815</h4>1 edition purchased by{" "}
                     <span className="color">Jimmy Wright</span> for 0.02 ETH
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -138,7 +138,7 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/7.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">Nicholas Daniels</span>
+                    liked by <span className="color">The Art of Sophons</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>
@@ -155,7 +155,7 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/6.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">Nicholas Daniels</span>
+                    liked by <span className="color">The Art of Sophons</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>
@@ -171,7 +171,7 @@ const Activity = function () {
                     alt=""
                   />
                   <div className="act_list_text">
-                    <h4>Monica Lucas</h4>
+                    <h4>The Art of Sophons</h4>
                     started following <span className="color">Gayle Hicks</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -197,7 +197,7 @@ const Activity = function () {
                 <li className="act_sale">
                   <img className="lazy" src="./img/items/sophon/2.png" alt="" />
                   <div className="act_list_text">
-                    <h4>Deep Sea Phantasy</h4>1 edition purchased by{" "}
+                    <h4>Item #3637</h4>1 edition purchased by{" "}
                     <span className="color">Stacy Long</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -205,7 +205,7 @@ const Activity = function () {
                 <li className="act_sale">
                   <img className="lazy" src="./img/items/sophon/4.png" alt="" />
                   <div className="act_list_text">
-                    <h4>Two Tigers</h4>1 edition purchased by{" "}
+                    <h4>Item #6815</h4>1 edition purchased by{" "}
                     <span className="color">Jimmy Wright</span> for 0.02 ETH
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -219,7 +219,7 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/7.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">Nicholas Daniels</span>
+                    liked by <span className="color">The Art of Sophons</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>
@@ -227,7 +227,7 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/6.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">Nicholas Daniels</span>
+                    liked by <span className="color">The Art of Sophons</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>

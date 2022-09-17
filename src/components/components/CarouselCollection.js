@@ -87,7 +87,7 @@ export default class Responsive extends Component {
               </div>
               <div className="nft_coll_info">
                 <span onClick={() => window.open("/home", "_self")}>
-                  <h4>Abstraction</h4>
+                  <h4>Collection #6949</h4>
                 </span>
                 <span>ERC-192</span>
               </div>
@@ -117,7 +117,7 @@ export default class Responsive extends Component {
               </div>
               <div className="nft_coll_info">
                 <span onClick={() => window.open("/#", "_self")}>
-                  <h4>Patternlicious</h4>
+                  <h4>Collection #2672</h4>
                 </span>
                 <span>ERC-61</span>
               </div>
@@ -147,7 +147,7 @@ export default class Responsive extends Component {
               </div>
               <div className="nft_coll_info">
                 <span onClick={() => window.open("/#", "_self")}>
-                  <h4>Skecthify</h4>
+                  <h4>Collection #2856</h4>
                 </span>
                 <span>ERC-126</span>
               </div>
@@ -177,7 +177,7 @@ export default class Responsive extends Component {
               </div>
               <div className="nft_coll_info">
                 <span onClick={() => window.open("/#", "_self")}>
-                  <h4>Cartoonism</h4>
+                  <h4>Collection #7643</h4>
                 </span>
                 <span>ERC-73</span>
               </div>
@@ -207,7 +207,7 @@ export default class Responsive extends Component {
               </div>
               <div className="nft_coll_info">
                 <span onClick={() => window.open("/#", "_self")}>
-                  <h4>Virtuland</h4>
+                  <h4>Collection #5784</h4>
                 </span>
                 <span>ERC-85</span>
               </div>
@@ -237,7 +237,7 @@ export default class Responsive extends Component {
               </div>
               <div className="nft_coll_info">
                 <span onClick={() => window.open("/#", "_self")}>
-                  <h4>Papercut</h4>
+                  <h4>Collection #0364</h4>
                 </span>
                 <span>ERC-42</span>
               </div>

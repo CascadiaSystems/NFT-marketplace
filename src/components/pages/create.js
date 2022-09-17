@@ -149,7 +149,7 @@ export default class Createpage extends Component {
                 </div>
                 <div className="nft__item_info">
                   <span>
-                    <h4>Pinky Ocean</h4>
+                    <h4>Item #2563</h4>
                   </span>
                   <div className="nft__item_price">
                     0.08 ETH<span>1/20</span>

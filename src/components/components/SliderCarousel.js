@@ -70,8 +70,8 @@ export default class Responsive extends Component {
             <div className="nft_pic">
               <span>
                 <span className="nft_pic_info">
-                  <span className="nft_pic_title">live Arts</span>
-                  <span className="nft_pic_by">Nicholas Daniels</span>
+                  <span className="nft_pic_title">Sophon #95623</span>
+                  <span className="nft_pic_by">The Art of Sophons</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -88,8 +88,8 @@ export default class Responsive extends Component {
             <div className="nft_pic">
               <span>
                 <span className="nft_pic_info">
-                  <span className="nft_pic_title">Red Ocean</span>
-                  <span className="nft_pic_by">Monica Lucas</span>
+                  <span className="nft_pic_title">Sophon #86273</span>
+                  <span className="nft_pic_by">The Art of Sophons</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -106,8 +106,8 @@ export default class Responsive extends Component {
             <div className="nft_pic">
               <span>
                 <span className="nft_pic_info">
-                  <span className="nft_pic_title">Hot Lava</span>
-                  <span className="nft_pic_by">Nicholas Daniels</span>
+                  <span className="nft_pic_title">Sophon #73374</span>
+                  <span className="nft_pic_by">The Art of Sophons</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -124,8 +124,8 @@ export default class Responsive extends Component {
             <div className="nft_pic">
               <span>
                 <span className="nft_pic_info">
-                  <span className="nft_pic_title">Loop Donut</span>
-                  <span className="nft_pic_by">Lori Hart</span>
+                  <span className="nft_pic_title">Sophon #99763</span>
+                  <span className="nft_pic_by">The Art of Sophons</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -142,8 +142,8 @@ export default class Responsive extends Component {
             <div className="nft_pic">
               <span>
                 <span className="nft_pic_info">
-                  <span className="nft_pic_title">I Believe I Can Fly</span>
-                  <span className="nft_pic_by">Fred Ryan</span>
+                  <span className="nft_pic_title">Sophon #89763</span>
+                  <span className="nft_pic_by">The Art of Sophons</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">

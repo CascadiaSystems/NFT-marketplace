@@ -110,7 +110,7 @@ const explore = () => (
                     />
                     <i className="fa fa-check"></i>
                   </div>
-                  Abstraction
+                  Collection #6949
                 </th>
                 <td>15,225.87</td>
                 <td className="d-plus">+87.54%</td>
@@ -148,7 +148,7 @@ const explore = () => (
                     />
                     <i className="fa fa-check"></i>
                   </div>
-                  Cartoonism
+                  Collection #7643
                 </th>
                 <td>13,705.58</td>
                 <td className="d-min">-33.56%</td>
@@ -167,7 +167,7 @@ const explore = () => (
                     />
                     <i className="fa fa-check"></i>
                   </div>
-                  Papercut
+                  Collection #0364
                 </th>
                 <td>12,516.75</td>
                 <td className="d-plus">+23.45%</td>
@@ -186,7 +186,7 @@ const explore = () => (
                     />
                     <i className="fa fa-check"></i>
                   </div>
-                  Virtuland
+                  Collection #5784
                 </th>
                 <td>11,586.26</td>
                 <td className="d-plus">+80.91%</td>
@@ -281,7 +281,7 @@ const explore = () => (
                     />
                     <i className="fa fa-check"></i>
                   </div>
-                  Patternlicious
+                  Collection #2672
                 </th>
                 <td>6,593.91</td>
                 <td className="d-min">-33.78%</td>

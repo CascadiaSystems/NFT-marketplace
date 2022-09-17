@@ -11,7 +11,7 @@ const authorlist = () => (
           </span>
         </div>
         <div className="author_list_info">
-          <span onClick={() => window.open("", "_self")}>Monica Lucas</span>
+          <span onClick={() => window.open("", "_self")}>Aaru</span>
           <span className="bot">3.2 ETH</span>
         </div>
       </li>
@@ -35,7 +35,9 @@ const authorlist = () => (
           </span>
         </div>
         <div className="author_list_info">
-          <span onClick={() => window.open("", "_self")}>Nicholas Daniels</span>
+          <span onClick={() => window.open("", "_self")}>
+            The Art of Sophons
+          </span>
           <span className="bot">2.5 ETH</span>
         </div>
       </li>
@@ -47,7 +49,9 @@ const authorlist = () => (
           </span>
         </div>
         <div className="author_list_info">
-          <span onClick={() => window.open("", "_self")}>Lori Hart</span>
+          <span onClick={() => window.open("", "_self")}>
+            The Art of Sophons
+          </span>
           <span className="bot">2.2 ETH</span>
         </div>
       </li>
@@ -143,7 +147,9 @@ const authorlist = () => (
           </span>
         </div>
         <div className="author_list_info">
-          <span onClick={() => window.open("", "_self")}>Fred Ryan</span>
+          <span onClick={() => window.open("", "_self")}>
+            The Art of Sophons
+          </span>
           <span className="bot">0.5 eth</span>
         </div>
       </li>
