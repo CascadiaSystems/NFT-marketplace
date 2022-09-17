@@ -71,7 +71,7 @@ export default class Responsive extends Component {
               <span>
                 <span className="nft_pic_info">
                   <span className="nft_pic_title">Sophon #95623</span>
-                  <span className="nft_pic_by">The Art of Sophons</span>
+                  <span className="nft_pic_by">The Art of Sophon</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -89,7 +89,7 @@ export default class Responsive extends Component {
               <span>
                 <span className="nft_pic_info">
                   <span className="nft_pic_title">Sophon #86273</span>
-                  <span className="nft_pic_by">The Art of Sophons</span>
+                  <span className="nft_pic_by">The Art of Sophon</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -107,7 +107,7 @@ export default class Responsive extends Component {
               <span>
                 <span className="nft_pic_info">
                   <span className="nft_pic_title">Sophon #73374</span>
-                  <span className="nft_pic_by">The Art of Sophons</span>
+                  <span className="nft_pic_by">The Art of Sophon</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -125,7 +125,7 @@ export default class Responsive extends Component {
               <span>
                 <span className="nft_pic_info">
                   <span className="nft_pic_title">Sophon #99763</span>
-                  <span className="nft_pic_by">The Art of Sophons</span>
+                  <span className="nft_pic_by">The Art of Sophon</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">
@@ -143,7 +143,7 @@ export default class Responsive extends Component {
               <span>
                 <span className="nft_pic_info">
                   <span className="nft_pic_title">Sophon #89763</span>
-                  <span className="nft_pic_by">The Art of Sophons</span>
+                  <span className="nft_pic_by">The Art of Sophon</span>
                 </span>
               </span>
               <div className="nft_pic_wrap">

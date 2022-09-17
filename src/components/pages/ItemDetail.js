@@ -73,7 +73,7 @@ const Colection = function () {
                   </span>
                 </div>
                 <div className="author_list_info">
-                  <span>The Art of Sophons</span>
+                  <span>The Art of Sophon</span>
                 </div>
               </div>
               <div className="spacer-40"></div>
@@ -104,7 +104,7 @@ const Colection = function () {
                         <div className="p_list_info">
                           Bid accepted <b>0.005 ETH</b>
                           <span>
-                            by <b>The Art of Sophons</b> at 6/15/2021, 3:20 AM
+                            by <b>The Art of Sophon</b> at 6/15/2021, 3:20 AM
                           </span>
                         </div>
                       </div>
@@ -142,7 +142,7 @@ const Colection = function () {
                         <div className="p_list_info">
                           Bid <b>0.004 ETH</b>
                           <span>
-                            by <b>The Art of Sophons</b> at 6/13/2021, 5:03 AM
+                            by <b>The Art of Sophon</b> at 6/13/2021, 5:03 AM
                           </span>
                         </div>
                       </div>
@@ -161,7 +161,7 @@ const Colection = function () {
                         <div className="p_list_info">
                           Bid <b>0.003 ETH</b>
                           <span>
-                            by <b>The Art of Sophons</b> at 6/12/2021, 12:57 AM
+                            by <b>The Art of Sophon</b> at 6/12/2021, 12:57 AM
                           </span>
                         </div>
                       </div>
@@ -203,7 +203,7 @@ const Colection = function () {
                         <div className="p_list_info">
                           Bid accepted <b>0.005 ETH</b>
                           <span>
-                            by <b>The Art of Sophons</b> at 6/15/2021, 3:20 AM
+                            by <b>The Art of Sophon</b> at 6/15/2021, 3:20 AM
                           </span>
                         </div>
                       </div>
@@ -241,7 +241,7 @@ const Colection = function () {
                         <div className="p_list_info">
                           Bid <b>0.004 ETH</b>
                           <span>
-                            by <b>The Art of Sophons</b> at 6/13/2021, 5:03 AM
+                            by <b>The Art of Sophon</b> at 6/13/2021, 5:03 AM
                           </span>
                         </div>
                       </div>
@@ -260,7 +260,7 @@ const Colection = function () {
                         <div className="p_list_info">
                           Bid <b>0.003 ETH</b>
                           <span>
-                            by <b>The Art of Sophons</b> at 6/12/2021, 12:57 AM
+                            by <b>The Art of Sophon</b> at 6/12/2021, 12:57 AM
                           </span>
                         </div>
                       </div>

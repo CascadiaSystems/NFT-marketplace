@@ -100,7 +100,7 @@ const Activity = function () {
                     alt=""
                   />
                   <div className="act_list_text">
-                    <h4>The Art of Sophons</h4>
+                    <h4>The Art of Sophon</h4>
                     started following <span className="color">Gayle Hicks</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -138,14 +138,14 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/7.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">The Art of Sophons</span>
+                    liked by <span className="color">The Art of Sophon</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>
                 <li className="act_offer">
                   <img className="lazy" src="./img/items/sophon/5.png" alt="" />
                   <div className="act_list_text">
-                    <h4>Purple Planet</h4>
+                    <h4>item #0637</h4>
                     <span className="color">Franklin Greer</span> offered 0.002
                     ETH
                     <span className="act_list_date">10/07/2021, 12:40</span>
@@ -155,7 +155,7 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/6.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">The Art of Sophons</span>
+                    liked by <span className="color">The Art of Sophon</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>
@@ -171,7 +171,7 @@ const Activity = function () {
                     alt=""
                   />
                   <div className="act_list_text">
-                    <h4>The Art of Sophons</h4>
+                    <h4>The Art of Sophon</h4>
                     started following <span className="color">Gayle Hicks</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
@@ -219,7 +219,7 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/7.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">The Art of Sophons</span>
+                    liked by <span className="color">The Art of Sophon</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>
@@ -227,7 +227,7 @@ const Activity = function () {
                   <img className="lazy" src="./img/items/sophon/6.png" alt="" />
                   <div className="act_list_text">
                     <h4>Cute Astronout</h4>
-                    liked by <span className="color">The Art of Sophons</span>
+                    liked by <span className="color">The Art of Sophon</span>
                     <span className="act_list_date">10/07/2021, 12:40</span>
                   </div>
                 </li>
@@ -239,7 +239,7 @@ const Activity = function () {
                 <li className="act_offer">
                   <img className="lazy" src="./img/items/sophon/5.png" alt="" />
                   <div className="act_list_text">
-                    <h4>Purple Planet</h4>
+                    <h4>item #0637</h4>
                     <span className="color">Franklin Greer</span> offered 0.002
                     ETH
                     <span className="act_list_date">10/07/2021, 12:40</span>

@@ -139,7 +139,7 @@ export default class Responsive extends Component {
       bidLink: "#",
       authorImg: "./img/author/sophon/7.png",
       previewImg: "./img/items/static-5.jpg",
-      title: "Purple Planet",
+      title: "item #0637",
       price: "0.08 ETH",
       bid: "1/20",
       likes: 50,

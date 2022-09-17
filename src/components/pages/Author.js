@@ -54,7 +54,7 @@ const Colection = function () {
                   <i className="fa fa-check"></i>
                   <div className="profile_name">
                     <h4>
-                      The Art of Sophons
+                      The Art of Sophon
                       <span className="profile_username">@monicaaa</span>
                       <span id="wallet" className="profile_wallet">
                         DdzFFzCqrhshMSxb9oW3mRo4MJrQkusV3fGFSTwaiu4wPBqMryA9DYVJCkW9n7twCffG5f5wX2sSkoDXGiZB1HPa7K7f865Kk4LqnrME
