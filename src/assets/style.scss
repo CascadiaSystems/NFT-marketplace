@@ -959,6 +959,11 @@ p.lead {
         right: 90px;
         top: 28px;
       }
+      .color-switch {
+        position: absolute;
+        right: 60px;
+        top: 28px;
+      }
       .dropdown-custom.btn {
         color: $text;
         width: 100%;
@@ -1127,14 +1132,9 @@ p.lead {
   /*pointer-events: none;*/
 }
 .color-switch {
-  padding-left: 20px;
-  right: 55px;
   width: max-content;
-  padding-left: 0;
   padding-right: 0;
-  position: absolute;
-  right: 60px;
-  top: 28px;
+  padding-left: 20px;
 }
 /* disable click active */
 
