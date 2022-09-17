@@ -2422,7 +2422,7 @@ i.font60 {
   display: block;
   text-align: center;
   font-size: 28px;
-  color: $text;
+  color: #fff;
   background: $color_more;
   padding: 14px 0;
   width: 56px;
@@ -2437,7 +2437,8 @@ i.font60 {
   background: none;
   width: auto;
   height: auto;
-  color: rgba(252, 52, 63, 0.1);
+  opacity: 0.1;
+  color: $color_more;
   right: 0;
   top: 30%;
 }
@@ -2489,13 +2490,13 @@ i.font60 {
   background: rgba(0, 0, 0, 0.1);
 }
 .feature-box.f-boxed:hover {
-  color: #ffffff;
+  color: $text;
   -webkit-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
 }
 .feature-box.f-boxed:hover h4 {
-  color: #ffffff;
+  color: $text;
 }
 .feature-box i.i-circle {
   border-radius: 60px;
