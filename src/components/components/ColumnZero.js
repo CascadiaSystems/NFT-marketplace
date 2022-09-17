@@ -221,10 +221,7 @@ export default class Responsive extends Component {
                   <i className="fa fa-check"></i>
                 </span>
               </div>
-              <div
-                className="nft__item_wrap"
-                style={{ height: `${this.state.height}px` }}
-              >
+              <div className="nft__item_wrap">
                 <Outer>
                   <span>
                     <img
