@@ -39,20 +39,6 @@
   about / .about
 */
 
-/* scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ff343f;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
-}
-
 /*color*/
 // $text: #fff;
 // $gray: #bbb;
@@ -67,6 +53,7 @@
 
 $text: var(--text);
 $gray: var(--gray);
+$border: var(--border);
 $background: var(--background);
 $general: var(--general);
 $black_soft: var(--black_soft);
@@ -74,6 +61,8 @@ $black_col: var(--black_col);
 $black_more: var(--black_more);
 $black_opacity: var(--black_opacity);
 $color_more: var(--color_more);
+$footer: var(--footer);
+$footer-text: var(--footer-text);
 
 /*font*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap");
@@ -93,6 +82,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color_more;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 #routerhang {
   transform: unset !important;
   transform-origin: unset !important;
@@ -687,7 +691,7 @@ p.lead {
   width: max-content;
   text-align: center;
   color: #fff !important;
-  background: #ff343f;
+  background: $color_more;
   border-radius: 30px;
   letter-spacing: normal;
   outline: 0;
@@ -746,7 +750,7 @@ p.lead {
 .dropdown-toggle::after {
   font-family: FontAwesome;
   content: "\f078";
-  color: rgba(255, 255, 255, 0.5);
+  color: $text;
   padding-left: 2px;
   font-size: 8px;
   top: -1px;
@@ -758,7 +762,7 @@ p.lead {
 .item-dropdown {
   width: max-content;
   position: absolute;
-  background: rgba(33, 36, 40, 0.9);
+  background: $background;
   border-radius: 5px;
   inset: 50px auto auto 0;
   padding: 0 0;
@@ -776,7 +780,7 @@ p.lead {
       font-weight: normal;
       letter-spacing: normal;
       display: block;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid $border;
       padding: 8px 20px 8px 20px;
       min-width: 210px;
       width: 100%;
@@ -1096,7 +1100,7 @@ p.lead {
     a {
       text-align: center;
       color: #fff !important;
-      background: #ff343f;
+      background: $color_more;
       border-radius: 30px;
       letter-spacing: normal;
       outline: 0;
@@ -1670,7 +1674,7 @@ p.lead {
 /*** footer ***/
 footer {
   padding: 80px 0 0 0;
-  background: rgba(255, 255, 255, 0.025);
+  background: $footer;
   &.footer-light {
     border-top: solid 1px rgba(255, 255, 255, 0.025);
     color: #a2a2a2;
@@ -1703,7 +1707,7 @@ footer {
         font-size: 28px;
         float: left;
         width: 20%;
-        background: $text;
+        background: $color_more;
         color: #ffffff;
         display: table-cell;
         padding: 5px 0 5px 0;
@@ -1769,6 +1773,7 @@ footer {
     }
     h5 {
       margin-bottom: 20px;
+      color: #fff;
     }
   }
 }
@@ -1795,7 +1800,7 @@ footer {
     text-align: center;
     line-height: 30px;
     border-radius: 30px;
-    background: #ff343f;
+    background: $color_more;
     transition: all 0.3s ease;
     &:hover {
       transform: scale(1.1);
@@ -1959,7 +1964,7 @@ footer {
     font-size: 0.9rem;
     width: 100%;
     padding: 8px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid $border;
     margin-bottom: 15px;
   }
   textarea {
@@ -1967,7 +1972,7 @@ footer {
     width: 100%;
     height: 195px;
     padding: 8px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid $border;
     margin-bottom: 15px;
   }
   .msg-error {
@@ -2037,10 +2042,10 @@ footer {
 .padding40.box-rounded.mb30 {
   padding: 40px;
   border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: $border;
   &.text-light {
     color: $text;
-    background: rgba(255, 255, 255, 0.05);
+    background: $border;
     margin-bottom: 0;
     h3 {
       color: $text;
@@ -2215,7 +2220,7 @@ address {
   li {
     display: inline-block;
     padding: 8px 10px;
-    border: solid 1px rgba(255, 255, 255, 0.1);
+    border: solid 1px $border;
     border-radius: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
@@ -2575,9 +2580,9 @@ i.font60 {
 }
 .feature-box-small-icon.style-2 .number {
   font-size: 32px;
-  color: #fff;
+  color: $text;
   padding-top: 22px;
-  background: #253545;
+  background: $background;
   width: 70px;
   height: 70px;
 }
@@ -2832,7 +2837,7 @@ i.font60 {
   font-size: 14px;
   span {
     font-weight: bold;
-    color: $text;
+    color: $color_more;
   }
 }
 .nft__item_like {
@@ -2915,7 +2920,7 @@ i.font60 {
 }
 
 .author_list_pp i {
-  color: $text;
+  color: #fff;
   background: $color_more;
   font-size: 10px;
   padding: 3px;
@@ -3236,7 +3241,7 @@ i.font60 {
     float: left;
     color: $text;
     border-radius: 5px 0 0 5px;
-    border: solid 1px rgba(255, 255, 255, 0.1);
+    border: solid 1px $border;
     border-right-color: rgb(221, 221, 221);
     border-right-style: solid;
     border-right-width: 1px;
@@ -3255,7 +3260,7 @@ i.font60 {
       font-size: 16px;
       float: left;
       width: 60px;
-      background: $text;
+      background: $color_more;
       color: #ffffff;
       display: table-cell;
       padding: 13px 0;
@@ -3267,7 +3272,7 @@ i.font60 {
 .select1 {
   .css-wenqhu-control {
     background-color: $background;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid $border;
     & > div > div {
       color: $text;
     }
@@ -3321,7 +3326,7 @@ i.font60 {
 }
 .profile_avatar i {
   color: #ffffff;
-  background: $text;
+  background: $color_more;
   margin: 110px 0 0 110px;
   display: block;
   position: absolute;
@@ -3338,6 +3343,9 @@ i.font60 {
   justify-content: center;
   align-items: center;
   align-content: center;
+  img {
+    border: 1px solid $border;
+  }
 }
 .profile_name {
   margin-left: 20px;
@@ -3366,15 +3374,15 @@ i.font60 {
   font-size: 12px;
   padding: 4px 10px;
   line-height: 1em;
-  border: solid 1px #dddddd;
+  border: solid 1px $border;
   display: inline-block;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   outline: none;
   &:hover {
-    color: $text;
-    background: $text;
+    color: #fff;
+    background: $color_more;
     border: 0;
   }
 }
@@ -3415,8 +3423,8 @@ i.font60 {
       }
     }
     &.active span {
-      color: $text;
-      background: none;
+      color: #fff;
+      background: $color_more;
     }
   }
 }
@@ -3494,7 +3502,7 @@ i.font60 {
   }
   i {
     color: #ffffff;
-    background: $text;
+    background: $color_more;
     font-size: 10px;
     padding: 3px;
     position: absolute;
@@ -3563,7 +3571,7 @@ img.img-rounded {
   padding: 8px;
   margin-bottom: 20px;
   border: none;
-  border: solid 1px rgba(255, 255, 255, 0.1);
+  border: solid 1px $border;
   background: none;
   border-radius: 6px;
   -moz-border-radius: 6px;
@@ -3896,7 +3904,7 @@ img.img-rounded {
 
 /*** table ***/
 .de-table.table-rank {
-  color: #ffffff;
+  color: $text;
   display: table;
   margin-bottom: 0;
   --bs-table-bg: transparent;
@@ -3971,7 +3979,7 @@ img.img-rounded {
   border-radius: 3px;
   li {
     span {
-      border: solid 1px rgba(255, 255, 255, 0.1);
+      border: solid 1px $border;
       padding: 15px 20px 15px 20px;
       color: $text;
       cursor: pointer;
@@ -3979,9 +3987,9 @@ img.img-rounded {
   }
   li.active {
     span {
-      border-color: $text;
+      border-color: $border;
       border-right: none;
-      background: $text;
+      background: $color_more;
     }
   }
 }
@@ -3997,8 +4005,7 @@ img.img-rounded {
     float: left;
     margin-bottom: 0;
     border-radius: 8px 0 0 8px;
-    border: none;
-    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid $border;
   }
   #btn-submit {
     border: none;
@@ -4011,7 +4018,7 @@ img.img-rounded {
       float: left;
       width: 100%;
       color: #ffffff;
-      background: $text;
+      background: $color_more;
       display: table-cell;
       padding: 5px 40px 7px 40px;
       border-radius: 0 8px 8px 0;

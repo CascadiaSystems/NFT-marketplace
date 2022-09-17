@@ -20,7 +20,7 @@ export default function Swithcer() {
         onChange={toggleDarkMode}
         size={20}
         sunColor="white"
-        moonColor="#ff343f"
+        moonColor="#8364e2"
       />
     </div>
   );

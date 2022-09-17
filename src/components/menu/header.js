@@ -240,12 +240,12 @@ const Header = function () {
                             >
                               Author
                             </NavLink>
-                            <NavLink
+                            {/* <NavLink
                               to="/wallet"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Wallet
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink
                               to="/create"
                               onClick={() => btn_icon(!showmenu)}
@@ -258,24 +258,24 @@ const Header = function () {
                             >
                               News
                             </NavLink>
-                            <NavLink
+                            {/* <NavLink
                               to="/works"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Gallery
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink
                               to="/login"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login
                             </NavLink>
-                            <NavLink
+                            {/* <NavLink
                               to="/loginTwo"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login 2
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink
                               to="/register"
                               onClick={() => btn_icon(!showmenu)}
@@ -298,7 +298,7 @@ const Header = function () {
                       Activity
                     </NavLink>
                   </div>
-                  <div className="navbar-item">
+                  {/* <div className="navbar-item">
                     <div ref={ref3}>
                       <div
                         className="dropdown-custom dropdown-toggle btn"
@@ -361,7 +361,7 @@ const Header = function () {
                         </div>
                       )}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               )}
             </Breakpoint>
@@ -431,12 +431,12 @@ const Header = function () {
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
                             <NavLink to="/Author">Author</NavLink>
-                            <NavLink to="/wallet">Wallet</NavLink>
+                            {/* <NavLink to="/wallet">Wallet</NavLink> */}
                             <NavLink to="/create">Create</NavLink>
                             <NavLink to="/news">News</NavLink>
-                            <NavLink to="/works">Gallery</NavLink>
+                            {/* <NavLink to="/works">Gallery</NavLink> */}
                             <NavLink to="/login">login</NavLink>
-                            <NavLink to="/loginTwo">login 2</NavLink>
+                            {/* <NavLink to="/loginTwo">login 2</NavLink> */}
                             <NavLink to="/register">Register</NavLink>
                             <NavLink to="/contact">Contact Us</NavLink>
                           </div>
@@ -451,7 +451,7 @@ const Header = function () {
                     <span className="lines"></span>
                   </NavLink>
                 </div>
-                <div className="navbar-item">
+                {/* <div className="navbar-item">
                   <div ref={ref3}>
                     <div
                       className="dropdown-custom dropdown-toggle btn"
@@ -478,7 +478,7 @@ const Header = function () {
                       )}
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </Breakpoint>
           </BreakpointProvider>

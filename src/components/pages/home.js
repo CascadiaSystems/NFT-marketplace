@@ -21,7 +21,6 @@ const GlobalStyles = createGlobalStyle`
     // color: #fff;
   }
   header#myHeader .dropdown-toggle::after{
-    color: #fff;
   }
   header#myHeader .logo .d-block{
     display: none !important;
