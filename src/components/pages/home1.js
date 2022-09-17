@@ -1,12 +1,12 @@
-import React from 'react';
-import SliderCarousel from '../components/SliderCarouselsingle';
-import FeatureBox from '../components/FeatureBox';
-import CarouselCollection from '../components/CarouselCollection';
-import ColumnNew from '../components/ColumnNew';
-import AuthorList from '../components/authorList';
-import Footer from '../components/footer';
-import { createGlobalStyle } from 'styled-components';
-import Reveal from 'react-awesome-reveal';
+import React from "react";
+import SliderCarousel from "../components/SliderCarouselsingle";
+import FeatureBox from "../components/FeatureBox";
+import CarouselCollection from "../components/CarouselCollection";
+import ColumnNew from "../components/ColumnNew";
+import AuthorList from "../components/authorList";
+import Footer from "../components/footer";
+import { createGlobalStyle } from "styled-components";
+import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
 const fadeInUp = keyframes`
@@ -70,90 +70,125 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const homethree= () => (
+const homethree = () => (
   <div>
-  <GlobalStyles />
-      <section className="jumbotron no-bg" style={{backgroundImage: `url(${'./img/background/7.jpg'})`}}>
-        <div className='container'>
-          <div className='row align-items-center'>
-            <div className='col-lg-6'>
-                <div className="spacer-single"></div>
-                <Reveal className='onStep' keyframes={fadeInUp} delay={0} duration={600} triggerOnce>
-                <h6 className=""><span className="text-uppercase color">Gigaland Market</span></h6>
-                </Reveal>
-                <div className="spacer-10"></div>
-                <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
-                <h1 className="">Create, sell or collect digital items.</h1>
-                </Reveal>
-                <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
-                <p className=" lead">
-                Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable
-                </p>
-                </Reveal>
-                <div className="spacer-10"></div>
-                <Reveal className='onStep' keyframes={fadeInUp} delay={800} duration={900} triggerOnce>
-                <span onClick={()=> window.open("/#", "_self")} className="btn-main lead">Explore</span>
-                <div className="mb-sm-30"></div>
-                </Reveal>
-                <div className="spacer-double"></div>
-            </div>
-             <div className='col-lg-6 px-0'>
-               <SliderCarousel/>
-             </div>
+    <GlobalStyles />
+    <section
+      className="jumbotron no-bg"
+      style={{ backgroundImage: `url(${"./img/background/7.jpg"})` }}
+    >
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-6">
+            <div className="spacer-single"></div>
+            <Reveal
+              className="onStep"
+              keyframes={fadeInUp}
+              delay={0}
+              duration={600}
+              triggerOnce
+            >
+              <h6 className="">
+                <span className="text-uppercase color">Gigaland Market</span>
+              </h6>
+            </Reveal>
+            <div className="spacer-10"></div>
+            <Reveal
+              className="onStep"
+              keyframes={fadeInUp}
+              delay={300}
+              duration={600}
+              triggerOnce
+            >
+              <h1 className="">Create, sell or collect digital items.</h1>
+            </Reveal>
+            <Reveal
+              className="onStep"
+              keyframes={fadeInUp}
+              delay={600}
+              duration={600}
+              triggerOnce
+            >
+              <p className=" lead">
+                Unit of data stored on a digital ledger, called a blockchain,
+                that certifies a digital asset to be unique and therefore not
+                interchangeable
+              </p>
+            </Reveal>
+            <div className="spacer-10"></div>
+            <Reveal
+              className="onStep"
+              keyframes={fadeInUp}
+              delay={800}
+              duration={900}
+              triggerOnce
+            >
+              <span
+                onClick={() => window.open("/#", "_self")}
+                className="btn-main lead"
+              >
+                Explore
+              </span>
+              <div className="mb-sm-30"></div>
+            </Reveal>
+            <div className="spacer-double"></div>
+          </div>
+          <div className="col-lg-6 px-0">
+            <SliderCarousel />
           </div>
         </div>
-      </section>
-
-      <section className='container'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-lg-12'>
-              <h2 className='style-2'>New Items</h2>
-          </div>
-        </div>
-       <ColumnNew/>
       </div>
-      </section>
+    </section>
 
-      <section className='container no-top'>
-        <div className='row'>
-          <div className='col-lg-12'>
-              <h2 className='style-2'>Hot Collections</h2>
+    <section className="container">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <h2 className="style-2">New Items</h2>
           </div>
         </div>
-        <div className='container no-top'>
-          <div className='row'>
-            <div className='col-lg-12 px-0'>
-              <CarouselCollection/>
-            </div>
-          </div>
-        </div>
-      </section>
+        <ColumnNew />
+      </div>
+    </section>
 
-      <section className='container no-top'>
-        <div className='row'>
-          <div className='col-lg-12'>
-              <h2 className='style-2'>Top Seller</h2>
-          </div>
-          <div className='col-lg-12'>
-            <AuthorList/>
+    <section className="container no-top">
+      <div className="row">
+        <div className="col-lg-12">
+          <h2 className="style-2">Hot Collections</h2>
+        </div>
+      </div>
+      <div className="container no-top">
+        <div className="row">
+          <div className="col-lg-12 px-0">
+            <CarouselCollection />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section className='container no-top'>
-        <div className='row'>
-          <div className='col-lg-12'>
-              <h2 className='style-2'>Create and sell</h2>
-          </div>
+    <section className="container no-top">
+      <div className="row">
+        <div className="col-lg-12">
+          <h2 className="style-2">Top Seller</h2>
         </div>
-        <div className='container px-0'>
-          <FeatureBox/>
+        <div className="col-lg-12">
+          <AuthorList />
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section className="container no-top">
+      <div className="row">
+        <div className="col-lg-12">
+          <h2 className="style-2">Create and sell</h2>
+        </div>
+      </div>
+      <div className="container px-0">
+        <FeatureBox />
+      </div>
+    </section>
 
     <Footer />
-
   </div>
 );
 export default homethree;
