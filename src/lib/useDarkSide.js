@@ -1,9 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 export default function useDarkSide() {
-  const [theme, setTheme] = useState(
-    typeof window !== "undefined" ? localStorage.theme : "light"
-  );
+  const [theme, setTheme] = useState("dark");
 
   const colorTheme = useMemo(() => {
     return theme === "dark" ? "light" : "dark";
@@ -15,9 +13,7 @@ export default function useDarkSide() {
     root.classList.add(theme);
 
     //Save theme to local storage
-    if (typeof window !== "undefined") {
-      localStorage.setItem("theme", theme);
-    }
+    localStorage.setItem("theme", theme);
   }, [theme, colorTheme]);
 
   return { colorTheme, setTheme };
