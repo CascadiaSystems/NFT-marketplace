@@ -25,7 +25,7 @@ const NavLink = (props) => (
 const Header = function () {
   const [openMenu, setOpenMenu] = React.useState(false);
   const [openMenu1, setOpenMenu1] = React.useState(false);
-  const [openMenu2, setOpenMenu2] = React.useState(false);
+  // const [openMenu2, setOpenMenu2] = React.useState(false);
   // const [openMenu3, setOpenMenu3] = React.useState(false);
 
   // const handleBtnClick = () => {
@@ -35,9 +35,9 @@ const Header = function () {
   const handleBtnClick1 = () => {
     setOpenMenu1(!openMenu1);
   };
-  const handleBtnClick2 = () => {
-    setOpenMenu2(!openMenu2);
-  };
+  // const handleBtnClick2 = () => {
+  //   setOpenMenu2(!openMenu2);
+  // };
   // const handleBtnClick3 = () => {
   //   setOpenMenu3(!openMenu3);
   // };
@@ -47,9 +47,9 @@ const Header = function () {
   const closeMenu1 = () => {
     setOpenMenu1(false);
   };
-  const closeMenu2 = () => {
-    setOpenMenu2(false);
-  };
+  // const closeMenu2 = () => {
+  //   setOpenMenu2(false);
+  // };
   // const closeMenu3 = () => {
   //   setOpenMenu3(false);
   // };
@@ -59,9 +59,9 @@ const Header = function () {
   const ref1 = useOnclickOutside(() => {
     closeMenu1();
   });
-  const ref2 = useOnclickOutside(() => {
-    closeMenu2();
-  });
+  // const ref2 = useOnclickOutside(() => {
+  //   closeMenu2();
+  // });
   // const ref3 = useOnclickOutside(() => {
   //   closeMenu3();
   // });
@@ -229,7 +229,7 @@ const Header = function () {
                       )}
                     </div>
                   </div>
-                  <div className="navbar-item">
+                  {/* <div className="navbar-item">
                     <div ref={ref2}>
                       <div
                         className="dropdown-custom dropdown-toggle btn"
@@ -240,49 +240,49 @@ const Header = function () {
                       {openMenu2 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
-                            {/* <NavLink
+                            <NavLink
                               to="/Author/1"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Creator
-                            </NavLink> */}
-                            {/* <NavLink
+                            </NavLink>
+                            <NavLink
                               to="/wallet"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Wallet
-                            </NavLink> */}
+                            </NavLink>
                             <NavLink
                               to="/create"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Create
                             </NavLink>
-                            {/* <NavLink
+                            <NavLink
                               to="/news"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               News
-                            </NavLink> */}
-                            {/* <NavLink
+                            </NavLink>
+                            <NavLink
                               to="/works"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Gallery
-                            </NavLink> */}
-                            {/* <NavLink
+                            </NavLink>
+                            <NavLink
                               to="/login"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login
-                            </NavLink> */}
-                            {/* <NavLink
+                            </NavLink>
+                            <NavLink
                               to="/loginTwo"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login 2
-                            </NavLink> */}
-                            {/* <NavLink
+                            </NavLink>
+                            <NavLink
                               to="/register"
                               onClick={() => btn_icon(!showmenu)}
                             >
@@ -293,11 +293,16 @@ const Header = function () {
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Contact Us
-                            </NavLink> */}
+                            </NavLink>
                           </div>
                         </div>
                       )}
                     </div>
+                  </div> */}
+                  <div className="navbar-item">
+                    <NavLink to="/create" onClick={() => btn_icon(!showmenu)}>
+                      Create
+                    </NavLink>
                   </div>
                   <div className="navbar-item">
                     <NavLink to="/activity" onClick={() => btn_icon(!showmenu)}>
@@ -425,7 +430,7 @@ const Header = function () {
                     </div>
                   </div>
                 </div>
-                <div className="navbar-item">
+                {/* <div className="navbar-item">
                   <div ref={ref2}>
                     <div
                       className="dropdown-custom dropdown-toggle btn"
@@ -437,20 +442,26 @@ const Header = function () {
                       {openMenu2 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
-                            {/* <NavLink to="/Author/1">Creator</NavLink> */}
-                            {/* <NavLink to="/wallet">Wallet</NavLink> */}
+                            <NavLink to="/Author/1">Creator</NavLink>
+                            <NavLink to="/wallet">Wallet</NavLink>
                             <NavLink to="/create">Create</NavLink>
-                            {/* <NavLink to="/news">News</NavLink> */}
-                            {/* <NavLink to="/works">Gallery</NavLink> */}
-                            {/* <NavLink to="/login">login</NavLink> */}
-                            {/* <NavLink to="/loginTwo">login 2</NavLink> */}
-                            {/* <NavLink to="/register">Register</NavLink> */}
-                            {/* <NavLink to="/contact">Contact Us</NavLink> */}
+                            <NavLink to="/news">News</NavLink>
+                            <NavLink to="/works">Gallery</NavLink>
+                            <NavLink to="/login">login</NavLink>
+                            <NavLink to="/loginTwo">login 2</NavLink>
+                            <NavLink to="/register">Register</NavLink>
+                            <NavLink to="/contact">Contact Us</NavLink>
                           </div>
                         </div>
                       )}
                     </div>
                   </div>
+                </div> */}
+                <div className="navbar-item">
+                  <NavLink to="/create">
+                    Create
+                    <span className="lines"></span>
+                  </NavLink>
                 </div>
                 <div className="navbar-item">
                   <NavLink to="/activity">

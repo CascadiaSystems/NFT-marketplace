@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Clock from "../components/Clock";
+import { navigate } from "@reach/router";
 import Footer from "../components/footer";
 
 export default class Createpage extends Component {
@@ -136,10 +137,10 @@ export default class Createpage extends Component {
               <h5>Preview item</h5>
               <div className="nft__item m-0">
                 <div className="de_countdown">
-                  <Clock deadline="December, 30, 2021" />
+                  <Clock deadline="octorber, 30, 2022" />
                 </div>
                 <div className="author_list_pp">
-                  <span>
+                  <span onClick={() => navigate("/Author/1")}>
                     <img
                       className="lazy"
                       src="./img/author/sophon/1.png"
@@ -166,7 +167,9 @@ export default class Createpage extends Component {
                     0.08 ETH<span>1/20</span>
                   </div>
                   <div className="nft__item_action">
-                    <span>Place a bid</span>
+                    <span>
+                      <button>Place a bid</button>
+                    </span>
                   </div>
                   <div className="nft__item_like">
                     <i className="fa fa-heart"></i>
