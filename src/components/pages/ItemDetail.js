@@ -2,15 +2,19 @@ import React from "react";
 import Clock from "../components/Clock";
 import Footer from "../components/footer";
 import { createGlobalStyle } from "styled-components";
+import { constant } from "../../constants";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.white {
   }
 `;
 
-const Colection = function () {
+const Colection = function ({ type, itemId }) {
   const [openMenu, setOpenMenu] = React.useState(true);
   const [openMenu1, setOpenMenu1] = React.useState(false);
+
+  const nftItem = constant[type][itemId - 1];
+
   const handleBtnClick = () => {
     setOpenMenu(!openMenu);
     setOpenMenu1(false);
@@ -31,7 +35,7 @@ const Colection = function () {
         <div className="row mt-md-5 pt-md-4">
           <div className="col-md-6 text-center">
             <img
-              src="./img/items/sophon/1.png"
+              src={nftItem.previewImg}
               className="img-fluid img-rounded mb-sm-30"
               alt=""
             />
@@ -42,7 +46,7 @@ const Colection = function () {
               <div className="de_countdown">
                 <Clock deadline="December, 30, 2021" />
               </div>
-              <h2>Item #2563</h2>
+              <h2>{nftItem.title}</h2>
               <div className="item_info_counts">
                 <div className="item_info_type">
                   <i className="fa fa-image"></i>Art
@@ -64,11 +68,7 @@ const Colection = function () {
               <div className="item_author">
                 <div className="author_list_pp">
                   <span>
-                    <img
-                      className="lazy"
-                      src="./img/author/sophon/1.png"
-                      alt=""
-                    />
+                    <img className="lazy" src={nftItem.authorImg} alt="" />
                     <i className="fa fa-check"></i>
                   </span>
                 </div>
@@ -95,7 +95,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/1.png"
+                              src="/img/author/sophon/1.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -114,7 +114,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/2.png"
+                              src="/img/author/sophon/2.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -133,7 +133,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/3.png"
+                              src="/img/author/sophon/3.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -152,7 +152,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/4.png"
+                              src="/img/author/sophon/4.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -175,7 +175,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/5.png"
+                              src="/img/author/sophon/5.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -194,7 +194,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/1.png"
+                              src="/img/author/sophon/1.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -213,7 +213,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/2.png"
+                              src="/img/author/sophon/2.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -232,7 +232,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/3.png"
+                              src="/img/author/sophon/3.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>
@@ -251,7 +251,7 @@ const Colection = function () {
                           <span>
                             <img
                               className="lazy"
-                              src="./img/author/sophon/4.png"
+                              src="/img/author/sophon/4.png"
                               alt=""
                             />
                             <i className="fa fa-check"></i>

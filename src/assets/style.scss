@@ -2676,9 +2676,32 @@ i.font60 {
 }
 .nft_coll_info {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 10px;
   span {
     cursor: pointer;
+  }
+  .nft_coll_title {
+    display: block;
+    position: relative;
+    font-weight: bold;
+    transition: all;
+    .lines {
+      position: absolute;
+      bottom: 0px;
+      display: block;
+      width: 0;
+      border-bottom: 2px solid $text;
+      transition: 0.5s;
+    }
+    &:hover {
+      .lines {
+        width: 100%;
+        transition: 0.5s;
+      }
+    }
   }
 }
 .nft_coll h4 {
@@ -3097,7 +3120,24 @@ i.font60 {
 }
 .nft_pic_title {
   display: block;
+  position: relative;
   font-weight: bold;
+  transition: all;
+  width: fit-content;
+  .lines {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 0;
+    border-bottom: 2px solid $text;
+    transition: 0.5s;
+  }
+  &:hover {
+    .lines {
+      width: 100%;
+      transition: 0.5s;
+    }
+  }
 }
 .nft_pic_by {
   display: block;

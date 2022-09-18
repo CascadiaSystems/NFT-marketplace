@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { navigate } from "@reach/router";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { slides } from "../../constants/slides";
 
 class CustomSlide extends Component {
   render() {
@@ -63,98 +65,38 @@ export default class Responsive extends Component {
       ],
     };
 
+    const handleLink = (link) => () => {
+      navigate(link);
+    };
+
     return (
       <div className="nft-big">
         <Slider {...settings}>
-          <CustomSlide className="itm" index={1}>
-            <div className="nft_pic">
-              <span>
-                <span className="nft_pic_info">
-                  <span className="nft_pic_title">Sophon #95623</span>
-                  <span className="nft_pic_by">The Art of Sophon</span>
+          {slides.map((slide, index) => (
+            <CustomSlide className="itm" index={slide.id} key={index}>
+              <div className="nft_pic">
+                <span>
+                  <span className="nft_pic_info">
+                    <span
+                      className="nft_pic_title"
+                      onClick={handleLink(slide.nftLink)}
+                    >
+                      {slide.title}
+                      <span className="lines"></span>
+                    </span>
+                    <span className="nft_pic_by">{slide.collection}</span>
+                  </span>
                 </span>
-              </span>
-              <div className="nft_pic_wrap">
-                <img
-                  src="./img/carousel/sophon/1.png"
-                  className="lazy img-fluid"
-                  alt=""
-                />
+                <div className="nft_pic_wrap">
+                  <img
+                    src={slide.previewImg}
+                    className="lazy img-fluid"
+                    alt=""
+                  />
+                </div>
               </div>
-            </div>
-          </CustomSlide>
-
-          <CustomSlide className="itm" index={2}>
-            <div className="nft_pic">
-              <span>
-                <span className="nft_pic_info">
-                  <span className="nft_pic_title">Sophon #86273</span>
-                  <span className="nft_pic_by">The Art of Sophon</span>
-                </span>
-              </span>
-              <div className="nft_pic_wrap">
-                <img
-                  src="./img/carousel/sophon/2.png"
-                  className="lazy img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </CustomSlide>
-
-          <CustomSlide className="itm" index={3}>
-            <div className="nft_pic">
-              <span>
-                <span className="nft_pic_info">
-                  <span className="nft_pic_title">Sophon #73374</span>
-                  <span className="nft_pic_by">The Art of Sophon</span>
-                </span>
-              </span>
-              <div className="nft_pic_wrap">
-                <img
-                  src="./img/carousel/sophon/3.png"
-                  className="lazy img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </CustomSlide>
-
-          <CustomSlide className="itm" index={4}>
-            <div className="nft_pic">
-              <span>
-                <span className="nft_pic_info">
-                  <span className="nft_pic_title">Sophon #99763</span>
-                  <span className="nft_pic_by">The Art of Sophon</span>
-                </span>
-              </span>
-              <div className="nft_pic_wrap">
-                <img
-                  src="./img/items/sophon/4.png"
-                  className="lazy img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </CustomSlide>
-
-          <CustomSlide className="itm" index={5}>
-            <div className="nft_pic">
-              <span>
-                <span className="nft_pic_info">
-                  <span className="nft_pic_title">Sophon #89763</span>
-                  <span className="nft_pic_by">The Art of Sophon</span>
-                </span>
-              </span>
-              <div className="nft_pic_wrap">
-                <img
-                  src="./img/items/sophon/5.png"
-                  className="lazy img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </CustomSlide>
+            </CustomSlide>
+          ))}
         </Slider>
       </div>
     );

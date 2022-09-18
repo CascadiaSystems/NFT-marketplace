@@ -1,177 +1,10 @@
 import React, { Component } from "react";
+import { navigate } from "@reach/router";
+import { items } from "../../constants/items";
 import Clock from "./Clock";
 
 export default class Responsive extends Component {
-  dummyData = [
-    {
-      deadline: "December, 30, 2021",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-1.jpg",
-      previewImg: "./img/items/static-1.jpg",
-      title: "Item #2563",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-10.jpg",
-      previewImg: "./img/items/static-2.jpg",
-      title: "Item #3637",
-      price: "0.06 ETH",
-      bid: "1/22",
-      likes: 80,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-11.jpg",
-      previewImg: "./img/items/static-3.jpg",
-      title: "Item #5547",
-      price: "0.05 ETH",
-      bid: "1/11",
-      likes: 97,
-    },
-    {
-      deadline: "January, 1, 2022",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-12.jpg",
-      previewImg: "./img/items/static-4.jpg",
-      title: "Item #6815",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-9.jpg",
-      previewImg: "./img/items/anim-4.webp",
-      title: "Item #1652",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "January, 15, 2022",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-2.jpg",
-      previewImg: "./img/items/anim-2.webp",
-      title: "Item #8841",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-3.jpg",
-      previewImg: "./img/items/anim-1.webp",
-      title: "Item #5584",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-4.jpg",
-      previewImg: "./img/items/anim-5.webp",
-      title: "Sophon #99763",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "January, 3, 2022",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-5.jpg",
-      previewImg: "./img/items/anim-3.webp",
-      title: "Item #4881",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-7.jpg",
-      previewImg: "./img/items/static-5.jpg",
-      title: "item #0637",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-6.jpg",
-      previewImg: "./img/items/anim-6.webp",
-      title: "Item #7794",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "January, 10, 2022",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-8.jpg",
-      previewImg: "./img/items/anim-7.webp",
-      title: "Item #2694",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-9.jpg",
-      previewImg: "./img/items/static-6.jpg",
-      title: "Item #6949",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-    {
-      deadline: "January, 10, 2022",
-      authorLink: "#",
-      nftLink: "#",
-      bidLink: "#",
-      authorImg: "./img/author/author-12.jpg",
-      previewImg: "./img/items/anim-8.webp",
-      title: "Sophon #89763",
-      price: "0.08 ETH",
-      bid: "1/20",
-      likes: 50,
-    },
-  ];
+  dummyData = items;
 
   constructor(props) {
     super(props);
@@ -234,8 +67,12 @@ export default class Responsive extends Component {
                 </span>
               </div>
               <div className="nft__item_info">
-                <span onClick={() => window.open(nft.nftLink, "_self")}>
+                <span
+                  className="nft_pic_title"
+                  onClick={() => navigate(nft.nftLink)}
+                >
                   <h4>{nft.title}</h4>
+                  <span className="lines"></span>
                 </span>
                 <div className="nft__item_price">
                   {nft.price}
