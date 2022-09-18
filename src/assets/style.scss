@@ -2945,7 +2945,7 @@ i.font60 {
   display: inline-block;
   width: 50px;
   height: auto;
-  background: $text;
+  background: $background;
   margin-left: 4px;
   margin-top: 0px;
   border-radius: 100% !important;
@@ -2953,7 +2953,7 @@ i.font60 {
   transition: 0.3s;
   &:hover img {
     padding: 1px;
-    -webkit-box-shadow: 0px 0px 0px 2px $text;
+    -webkit-box-shadow: 0px 0px 0px 2px $color_more;
     transition: 0.3s;
   }
 }
