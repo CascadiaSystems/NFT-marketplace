@@ -198,7 +198,7 @@ const Header = function () {
                               to="/colection"
                               onClick={() => btn_icon(!showmenu)}
                             >
-                              Collection
+                              Collections
                             </NavLink>
                             <NavLink
                               to="/ItemDetail"
@@ -408,7 +408,7 @@ const Header = function () {
                             <NavLink to="/explore">Explore</NavLink>
                             {/* <NavLink to="/explore2">Explore 2</NavLink> */}
                             <NavLink to="/rangking">Rangking</NavLink>
-                            <NavLink to="/colection">Collection</NavLink>
+                            <NavLink to="/colection">Collections</NavLink>
                             <NavLink to="/ItemDetail">Items Details</NavLink>
                             <NavLink to="/Auction">Live Auction</NavLink>
                             <NavLink to="/helpcenter">Help Center</NavLink>
