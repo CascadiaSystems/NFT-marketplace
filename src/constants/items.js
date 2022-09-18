@@ -1,7 +1,7 @@
 export const items = [
   {
     id: 1,
-    deadline: "December, 30, 2021",
+    deadline: "octorber, 30, 2022",
     authorLink: "ItemDetail",
     nftLink: "ItemDetail",
     bidLink: "ItemDetail",
@@ -85,7 +85,7 @@ export const items = [
   },
   {
     id: 7,
-    deadline: "December, 20, 2021",
+    deadline: "octorber, 20, 2022",
     authorLink: "#",
     nftLink: "/ItemDetail/items/7",
     bidLink: "#",

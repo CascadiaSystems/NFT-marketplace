@@ -46,7 +46,11 @@ const Colection = function ({ type, itemId }) {
             <div className="item_info">
               Auctions ends in
               <div className="de_countdown">
-                <Clock deadline="December, 30, 2021" />
+                {nftItem.deadline ? (
+                  <Clock deadline={nftItem.deadline} />
+                ) : (
+                  "--- --- ---"
+                )}
               </div>
               <h2>{nftItem.title}</h2>
               <div className="item_info_counts">
