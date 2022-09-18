@@ -33,6 +33,17 @@ export default class Responsive extends Component {
     }
   }
 
+  onLike(id) {
+    let nftState = this.state.nfts.map((nft) => {
+      if (nft.id === id) {
+        nft.likes++;
+      }
+      return nft;
+    });
+    this.setState({
+      nfts: [...nftState],
+    });
+  }
   render() {
     return (
       <div className="row">
@@ -85,7 +96,10 @@ export default class Responsive extends Component {
                     </button>
                   </span>
                 </div>
-                <div className="nft__item_like">
+                <div
+                  className="nft__item_like"
+                  onClick={() => this.onLike(nft.id)}
+                >
                   <i className="fa fa-heart"></i>
                   <span>{nft.likes}</span>
                 </div>
