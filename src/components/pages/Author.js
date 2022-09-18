@@ -4,13 +4,16 @@ import ColumnZeroTwo from "../components/ColumnZeroTwo";
 import ColumnZeroThree from "../components/ColumnZeroThree";
 import Footer from "../components/footer";
 import { createGlobalStyle } from "styled-components";
+import { authors } from "../../constants/authors";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.white {
   }
 `;
 
-const Colection = function () {
+const Author = function ({ authorId }) {
+  const author = authors.find((_author) => _author.id === Number(authorId));
+
   const [openMenu, setOpenMenu] = React.useState(true);
   const [openMenu1, setOpenMenu1] = React.useState(false);
   const [openMenu2, setOpenMenu2] = React.useState(false);
@@ -50,14 +53,14 @@ const Colection = function () {
             <div className="d_profile de-flex">
               <div className="de-flex-col">
                 <div className="profile_avatar">
-                  <img src="./img/author/sophon/1.png" alt="" />
+                  <img src={author.image} alt="" />
                   <i className="fa fa-check"></i>
                   <div className="profile_name">
                     <h4>
-                      The Art of Sophon
-                      <span className="profile_username">@monicaaa</span>
+                      {author.name}
+                      <span className="profile_username">@{author.link}</span>
                       <span id="wallet" className="profile_wallet">
-                        DdzFFzCqrhshMSxb9oW3mRo4MJrQkusV3fGFSTwaiu4wPBqMryA9DYVJCkW9n7twCffG5f5wX2sSkoDXGiZB1HPa7K7f865Kk4LqnrME
+                        {author.wallet_address}
                       </span>
                       {/* <button id="btn_copy" title="Copy Text">
                         Copy
@@ -68,7 +71,9 @@ const Colection = function () {
               </div>
               <div className="profile_follow de-flex">
                 <div className="de-flex-col">
-                  <div className="profile_follower">500 followers</div>
+                  <div className="profile_follower">
+                    {author.followers} followers
+                  </div>
                 </div>
                 <div className="de-flex-col">
                   <span className="btn-main">Follow</span>
@@ -118,4 +123,4 @@ const Colection = function () {
     </div>
   );
 };
-export default Colection;
+export default Author;

@@ -63,7 +63,7 @@ export default class Responsive extends Component {
                   </div>
                 )}
                 <div className="author_list_pp">
-                  <span onClick={() => window.open(nft.authorLink, "_self")}>
+                  <span onClick={() => navigate(nft.authorLink)}>
                     <img className="lazy" src={author.image} alt="" />
                     <i className="fa fa-check"></i>
                   </span>

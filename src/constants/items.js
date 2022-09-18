@@ -2,9 +2,9 @@ export const items = [
   {
     id: 1,
     deadline: "octorber, 30, 2022",
-    authorLink: "ItemDetail",
-    nftLink: "ItemDetail",
-    bidLink: "ItemDetail",
+    authorLink: "/Author/1",
+    nftLink: "/ItemDetail/items/1",
+    bidLink: "#",
     author: 1,
     previewImg: "/img/items/sophon/1.png",
     title: "Item #2563",
@@ -16,7 +16,7 @@ export const items = [
   {
     id: 2,
     deadline: "",
-    authorLink: "#",
+    authorLink: "/Author/2",
     nftLink: "/ItemDetail/items/2",
     bidLink: "#",
     author: 2,
@@ -30,7 +30,7 @@ export const items = [
   {
     id: 3,
     deadline: "",
-    authorLink: "#",
+    authorLink: "/Author/3",
     nftLink: "/ItemDetail/items/3",
     bidLink: "#",
     author: 3,
@@ -44,7 +44,7 @@ export const items = [
   {
     id: 4,
     deadline: "octorber, 1, 2022",
-    authorLink: "#",
+    authorLink: "/Author/4",
     nftLink: "/ItemDetail/items/4",
     bidLink: "#",
     author: 4,
@@ -58,7 +58,7 @@ export const items = [
   {
     id: 5,
     deadline: "",
-    authorLink: "#",
+    authorLink: "/Author/5",
     nftLink: "/ItemDetail/items/5",
     bidLink: "#",
     author: 5,
@@ -72,7 +72,7 @@ export const items = [
   {
     id: 6,
     deadline: "",
-    authorLink: "#",
+    authorLink: "/Author/6",
     nftLink: "/ItemDetail/items/6",
     bidLink: "#",
     author: 6,
@@ -86,7 +86,7 @@ export const items = [
   {
     id: 7,
     deadline: "octorber, 20, 2022",
-    authorLink: "#",
+    authorLink: "/Author/7",
     nftLink: "/ItemDetail/items/7",
     bidLink: "#",
     author: 7,
@@ -100,7 +100,7 @@ export const items = [
   {
     id: 8,
     deadline: "",
-    authorLink: "#",
+    authorLink: "/Author/8",
     nftLink: "/ItemDetail/items/8",
     bidLink: "#",
     author: 8,
@@ -114,7 +114,7 @@ export const items = [
   {
     id: 9,
     deadline: "octorber, 3, 2022",
-    authorLink: "#",
+    authorLink: "/Author/9",
     nftLink: "/ItemDetail/items/9",
     bidLink: "#",
     author: 9,
@@ -128,7 +128,7 @@ export const items = [
   {
     id: 10,
     deadline: "octorber, 1, 2022",
-    authorLink: "#",
+    authorLink: "/Author/10",
     nftLink: "/ItemDetail/items/10",
     bidLink: "#",
     author: 10,
@@ -142,7 +142,7 @@ export const items = [
   {
     id: 11,
     deadline: "",
-    authorLink: "#",
+    authorLink: "/Author/11",
     nftLink: "/ItemDetail/items/11",
     bidLink: "#",
     author: 11,
@@ -156,7 +156,7 @@ export const items = [
   {
     id: 12,
     deadline: "octorber, 10, 2022",
-    authorLink: "#",
+    authorLink: "/Author/12",
     nftLink: "/ItemDetail/items/12",
     bidLink: "#",
     author: 12,
@@ -170,7 +170,7 @@ export const items = [
   {
     id: 13,
     deadline: "",
-    authorLink: "#",
+    authorLink: "/Author/13",
     nftLink: "/ItemDetail/items/13",
     bidLink: "#",
     author: 13,
@@ -184,7 +184,7 @@ export const items = [
   {
     id: 14,
     deadline: "octorber, 10, 2022",
-    authorLink: "#",
+    authorLink: "/Author/14",
     nftLink: "/ItemDetail/items/14",
     bidLink: "#",
     author: 14,

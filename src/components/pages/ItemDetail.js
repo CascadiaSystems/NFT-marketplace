@@ -14,7 +14,7 @@ const Colection = function ({ type, itemId }) {
   const [openMenu, setOpenMenu] = React.useState(true);
   const [openMenu1, setOpenMenu1] = React.useState(false);
 
-  const nftItem = constant[type][itemId - 1];
+  const nftItem = constant[type].find((_item) => _item.id === Number(itemId));
   const author = authors.find((author) => author.id === nftItem.author);
 
   const handleBtnClick = () => {
