@@ -4,7 +4,7 @@ import { authors } from "../../constants/authors";
 const authorlist = () => (
   <div>
     <ol className="author_list">
-      {authors.map((author, index) => (
+      {authors.slice(0, 12).map((author, index) => (
         <li key={index}>
           <div className="author_list_pp">
             <span onClick={() => window.open("", "_self")}>
