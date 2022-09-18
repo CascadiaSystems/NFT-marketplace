@@ -67,13 +67,24 @@ export default class Createpage extends Component {
 
                   <div className="spacer-single"></div>
 
+                  <h5>Collection</h5>
+                  <input
+                    type="text"
+                    name="item_collection"
+                    id="item_collection"
+                    className="form-control"
+                    placeholder="e.g. 'The Art of Sophon"
+                  />
+
+                  <div className="spacer-10"></div>
+
                   <h5>Title</h5>
                   <input
                     type="text"
                     name="item_title"
                     id="item_title"
                     className="form-control"
-                    placeholder="e.g. 'Crypto Funk"
+                    placeholder="e.g. 'Crypto Sophon"
                   />
 
                   <div className="spacer-10"></div>

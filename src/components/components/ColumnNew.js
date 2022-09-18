@@ -50,7 +50,6 @@ export default class Responsive extends Component {
       <div className="row">
         {this.state.nfts.map((nft, index) => {
           const author = authors.find((_author) => _author.id === nft.author);
-
           return (
             <div
               key={index}

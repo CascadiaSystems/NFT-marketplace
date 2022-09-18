@@ -79,8 +79,10 @@ export default class Responsive extends Component {
                   <span>{nft.bid}</span>
                 </div>
                 <div className="nft__item_action">
-                  <span onClick={() => window.open(nft.bidLink, "_self")}>
-                    Place a bid
+                  <span>
+                    <button onClick={() => window.open(nft.bidLink, "_self")}>
+                      Place a bid
+                    </button>
                   </span>
                 </div>
                 <div className="nft__item_like">

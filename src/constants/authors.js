@@ -107,4 +107,22 @@ export const authors = [
     wallet_address: "0xC0C911aB850cD38198c1521b313f17e8D7624E08",
     followers: 100,
   },
+  {
+    id: 13,
+    name: "Franklin",
+    image: "/img/author/sophon/2.png",
+    price: 2.8,
+    link: "sophon_franklin",
+    wallet_address: "0xC24E0821f8c1517be80cD3C1aB918190D7685313",
+    followers: 734,
+  },
+  {
+    id: 14,
+    name: "Jennie",
+    image: "/img/author/sophon/3.png",
+    price: 4.5,
+    link: "sophon_jennie",
+    wallet_address: "0x0cD3C1aB918190C24E0821f8c1517be8D7685313",
+    followers: 400,
+  },
 ];

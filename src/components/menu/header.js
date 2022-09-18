@@ -171,7 +171,7 @@ const Header = function () {
                         className="dropdown-custom dropdown-toggle btn"
                         onClick={handleBtnClick1}
                       >
-                        Explore
+                        NFT
                       </div>
                       {openMenu1 && (
                         <div className="item-dropdown">
@@ -200,11 +200,17 @@ const Header = function () {
                             >
                               Collections
                             </NavLink>
-                            <NavLink
+                            {/* <NavLink
                               to="/ItemDetail"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Items Details
+                            </NavLink> */}
+                            <NavLink
+                              to="/Author/1"
+                              onClick={() => btn_icon(!showmenu)}
+                            >
+                              Creator
                             </NavLink>
                             <NavLink
                               to="/Auction"
@@ -212,12 +218,12 @@ const Header = function () {
                             >
                               Live Auction
                             </NavLink>
-                            <NavLink
+                            {/* <NavLink
                               to="/helpcenter"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Help Center
-                            </NavLink>
+                            </NavLink> */}
                           </div>
                         </div>
                       )}
@@ -234,12 +240,12 @@ const Header = function () {
                       {openMenu2 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
-                            <NavLink
-                              to="/Author"
+                            {/* <NavLink
+                              to="/Author/1"
                               onClick={() => btn_icon(!showmenu)}
                             >
-                              Author
-                            </NavLink>
+                              Creator
+                            </NavLink> */}
                             {/* <NavLink
                               to="/wallet"
                               onClick={() => btn_icon(!showmenu)}
@@ -252,31 +258,31 @@ const Header = function () {
                             >
                               Create
                             </NavLink>
-                            <NavLink
+                            {/* <NavLink
                               to="/news"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               News
-                            </NavLink>
+                            </NavLink> */}
                             {/* <NavLink
                               to="/works"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Gallery
                             </NavLink> */}
-                            <NavLink
+                            {/* <NavLink
                               to="/login"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login
-                            </NavLink>
+                            </NavLink> */}
                             {/* <NavLink
                               to="/loginTwo"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login 2
                             </NavLink> */}
-                            <NavLink
+                            {/* <NavLink
                               to="/register"
                               onClick={() => btn_icon(!showmenu)}
                             >
@@ -287,7 +293,7 @@ const Header = function () {
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Contact Us
-                            </NavLink>
+                            </NavLink> */}
                           </div>
                         </div>
                       )}
@@ -400,7 +406,7 @@ const Header = function () {
                       onMouseEnter={handleBtnClick1}
                       onMouseLeave={closeMenu1}
                     >
-                      Explore
+                      NFT
                       <span className="lines"></span>
                       {openMenu1 && (
                         <div className="item-dropdown">
@@ -409,9 +415,10 @@ const Header = function () {
                             {/* <NavLink to="/explore2">Explore 2</NavLink> */}
                             <NavLink to="/rangking">Rangking</NavLink>
                             <NavLink to="/colection">Collections</NavLink>
-                            <NavLink to="/ItemDetail">Items Details</NavLink>
+                            {/* <NavLink to="/ItemDetail">Items Details</NavLink> */}
+                            <NavLink to="/Author/1">Creator</NavLink>
                             <NavLink to="/Auction">Live Auction</NavLink>
-                            <NavLink to="/helpcenter">Help Center</NavLink>
+                            {/* <NavLink to="/helpcenter">Help Center</NavLink> */}
                           </div>
                         </div>
                       )}
@@ -430,15 +437,15 @@ const Header = function () {
                       {openMenu2 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
-                            <NavLink to="/Author">Author</NavLink>
+                            {/* <NavLink to="/Author/1">Creator</NavLink> */}
                             {/* <NavLink to="/wallet">Wallet</NavLink> */}
                             <NavLink to="/create">Create</NavLink>
-                            <NavLink to="/news">News</NavLink>
+                            {/* <NavLink to="/news">News</NavLink> */}
                             {/* <NavLink to="/works">Gallery</NavLink> */}
-                            <NavLink to="/login">login</NavLink>
+                            {/* <NavLink to="/login">login</NavLink> */}
                             {/* <NavLink to="/loginTwo">login 2</NavLink> */}
-                            <NavLink to="/register">Register</NavLink>
-                            <NavLink to="/contact">Contact Us</NavLink>
+                            {/* <NavLink to="/register">Register</NavLink> */}
+                            {/* <NavLink to="/contact">Contact Us</NavLink> */}
                           </div>
                         </div>
                       )}
