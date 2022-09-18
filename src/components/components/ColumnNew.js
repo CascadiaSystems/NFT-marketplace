@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { items } from "../../constants/items";
 import { navigate } from "@reach/router";
 import Clock from "./Clock";
+import { authors } from "../../constants/authors";
 
 export default class Responsive extends Component {
   dummyData = items;
@@ -47,66 +48,70 @@ export default class Responsive extends Component {
   render() {
     return (
       <div className="row">
-        {this.state.nfts.map((nft, index) => (
-          <div
-            key={index}
-            className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4"
-          >
-            <div className="nft__item m-0">
-              {nft.deadline && (
-                <div className="de_countdown">
-                  <Clock deadline={nft.deadline} />
-                </div>
-              )}
-              <div className="author_list_pp">
-                <span onClick={() => window.open(nft.authorLink, "_self")}>
-                  <img className="lazy" src={nft.authorImg} alt="" />
-                  <i className="fa fa-check"></i>
-                </span>
-              </div>
-              <div
-                className="nft__item_wrap"
-                // style={{ height: `${this.state.height}px` }}
-              >
-                <span>
-                  <img
-                    onLoad={this.onImgLoad}
-                    src={nft.previewImg}
-                    className="lazy nft__item_preview"
-                    alt=""
-                  />
-                </span>
-              </div>
-              <div className="nft__item_info">
-                <span
-                  className="nft_pic_title"
-                  onClick={() => navigate(nft.nftLink)}
-                >
-                  <h4>{nft.title}</h4>
-                  <span className="lines"></span>
-                </span>
-                <div className="nft__item_price">
-                  {nft.price}
-                  <span>{nft.bid}</span>
-                </div>
-                <div className="nft__item_action">
-                  <span>
-                    <button onClick={() => window.open(nft.bidLink, "_self")}>
-                      Place a bid
-                    </button>
+        {this.state.nfts.map((nft, index) => {
+          const author = authors.find((_author) => _author.id === nft.author);
+
+          return (
+            <div
+              key={index}
+              className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4"
+            >
+              <div className="nft__item m-0">
+                {nft.deadline && (
+                  <div className="de_countdown">
+                    <Clock deadline={nft.deadline} />
+                  </div>
+                )}
+                <div className="author_list_pp">
+                  <span onClick={() => window.open(nft.authorLink, "_self")}>
+                    <img className="lazy" src={author.image} alt="" />
+                    <i className="fa fa-check"></i>
                   </span>
                 </div>
                 <div
-                  className="nft__item_like"
-                  onClick={() => this.onLike(nft.id)}
+                  className="nft__item_wrap"
+                  // style={{ height: `${this.state.height}px` }}
                 >
-                  <i className="fa fa-heart"></i>
-                  <span>{nft.likes}</span>
+                  <span>
+                    <img
+                      onLoad={this.onImgLoad}
+                      src={nft.previewImg}
+                      className="lazy nft__item_preview"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div className="nft__item_info">
+                  <span
+                    className="nft_pic_title"
+                    onClick={() => navigate(nft.nftLink)}
+                  >
+                    <h4>{nft.title}</h4>
+                    <span className="lines"></span>
+                  </span>
+                  <div className="nft__item_price">
+                    {nft.price}
+                    <span>{nft.bid}</span>
+                  </div>
+                  <div className="nft__item_action">
+                    <span>
+                      <button onClick={() => window.open(nft.bidLink, "_self")}>
+                        Place a bid
+                      </button>
+                    </span>
+                  </div>
+                  <div
+                    className="nft__item_like"
+                    onClick={() => this.onLike(nft.id)}
+                  >
+                    <i className="fa fa-heart"></i>
+                    <span>{nft.likes}</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
         {this.state.nfts.length !== this.dummyData.length && (
           <div className="col-lg-12">
             <div className="spacer-single"></div>

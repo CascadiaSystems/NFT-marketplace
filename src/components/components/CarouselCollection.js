@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { collections } from "../../constants/collections";
+import { authors } from "../../constants/authors";
 
 class CustomSlide extends Component {
   render() {
@@ -67,37 +68,42 @@ export default class Responsive extends Component {
     return (
       <div className="nft">
         <Slider {...settings}>
-          {collections.map((collection, index) => (
-            <CustomSlide key={index} className="itm" index={collection.id}>
-              <div className="nft_coll">
-                <div className="nft_wrap">
-                  <span>
-                    <img
-                      src={collection.previewImg}
-                      className="lazy img-fluid"
-                      alt=""
-                    />
-                  </span>
+          {collections.map((collection, index) => {
+            const author = authors.find(
+              (_author) => _author.id === collection.author
+            );
+            return (
+              <CustomSlide key={index} className="itm" index={collection.id}>
+                <div className="nft_coll">
+                  <div className="nft_wrap">
+                    <span>
+                      <img
+                        src={collection.previewImg}
+                        className="lazy img-fluid"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div className="nft_coll_pp">
+                    <span onClick={() => navigate(collection.nftLink)}>
+                      <img className="lazy" src={author.image} alt="" />
+                    </span>
+                    <i className="fa fa-check"></i>
+                  </div>
+                  <div className="nft_coll_info">
+                    <span
+                      className="nft_coll_title"
+                      onClick={() => navigate(collection.nftLink)}
+                    >
+                      <h4>{collection.title}</h4>
+                      <span className="lines"></span>
+                    </span>
+                    <span>ERC-42</span>
+                  </div>
                 </div>
-                <div className="nft_coll_pp">
-                  <span onClick={() => navigate(collection.nftLink)}>
-                    <img className="lazy" src={collection.authorImg} alt="" />
-                  </span>
-                  <i className="fa fa-check"></i>
-                </div>
-                <div className="nft_coll_info">
-                  <span
-                    className="nft_coll_title"
-                    onClick={() => navigate(collection.nftLink)}
-                  >
-                    <h4>{collection.title}</h4>
-                    <span className="lines"></span>
-                  </span>
-                  <span>ERC-42</span>
-                </div>
-              </div>
-            </CustomSlide>
-          ))}
+              </CustomSlide>
+            );
+          })}
         </Slider>
       </div>
     );

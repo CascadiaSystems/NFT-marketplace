@@ -3,6 +3,7 @@ import Clock from "../components/Clock";
 import Footer from "../components/footer";
 import { createGlobalStyle } from "styled-components";
 import { constant } from "../../constants";
+import { authors } from "../../constants/authors";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.white {
@@ -14,6 +15,7 @@ const Colection = function ({ type, itemId }) {
   const [openMenu1, setOpenMenu1] = React.useState(false);
 
   const nftItem = constant[type][itemId - 1];
+  const author = authors.find((author) => author.id === nftItem.author);
 
   const handleBtnClick = () => {
     setOpenMenu(!openMenu);
@@ -55,7 +57,8 @@ const Colection = function ({ type, itemId }) {
                   <i className="fa fa-eye"></i>250
                 </div>
                 <div className="item_info_like">
-                  <i className="fa fa-heart"></i>18
+                  <i className="fa fa-heart"></i>
+                  {nftItem.likes}
                 </div>
               </div>
               <p>
@@ -68,12 +71,12 @@ const Colection = function ({ type, itemId }) {
               <div className="item_author">
                 <div className="author_list_pp">
                   <span>
-                    <img className="lazy" src={nftItem.authorImg} alt="" />
+                    <img className="lazy" src={author.image} alt="" />
                     <i className="fa fa-check"></i>
                   </span>
                 </div>
                 <div className="author_list_info">
-                  <span>The Art of Sophon</span>
+                  <span>{author.name}</span>
                 </div>
               </div>
               <div className="spacer-40"></div>
